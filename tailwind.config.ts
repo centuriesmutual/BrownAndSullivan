@@ -15,14 +15,17 @@ const config: Config = {
           wash: "#2C2C2C",
         },
         paper: {
-          DEFAULT: "#FAFAFA",
-          cream: "#F4EFE6",
+          DEFAULT: "#FFFFFF",
+          cream: "#F6F3EE",
+        },
+        gray: {
+          DEFAULT: "#E5E5E5",
         },
       },
       fontFamily: {
         display: ["var(--font-display)", "Cormorant Garamond", "Times", "serif"],
         block: ["var(--font-block)", "Archivo Black", "system-ui", "sans-serif"],
-        body: ["var(--font-body)", "Source Serif Pro", "Georgia", "serif"],
+        body: ["var(--font-body)", "Inter", "system-ui", "sans-serif"],
         mono: ["var(--font-mono)", "JetBrains Mono", "Menlo", "monospace"],
       },
       letterSpacing: {
@@ -71,9 +74,9 @@ const config: Config = {
         "drawer-pull": "drawer-pull 240ms ease-out both",
       },
       boxShadow: {
-        block: "0 1px 0 0 #0A0A0A",
-        "block-press": "0 2px 0 0 #0A0A0A",
-        plate: "0 0 0 1px #0A0A0A inset",
+        block: "0 12px 34px rgba(10, 10, 10, 0.08)",
+        "block-press": "0 16px 40px rgba(10, 10, 10, 0.1)",
+        plate: "0 0 0 1px rgba(10, 10, 10, 0.08) inset",
       },
     },
   },

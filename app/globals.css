@@ -5,16 +5,18 @@
 :root {
   --ink: #0a0a0a;
   --ink-wash: #2c2c2c;
-  --paper: #fafafa;
-  --paper-cream: #f4efe6;
-  --rule: #0a0a0a;
+  --paper: #ffffff;
+  --paper-cream: #f6f3ee;
+  --gray: #e5e5e5;
+  --panel: #fbfaf8;
+  --rule: #e5e5e5;
 }
 
 html,
 body {
   background-color: var(--paper);
   color: var(--ink);
-  font-family: var(--font-body), Georgia, serif;
+  font-family: var(--font-body), Inter, system-ui, sans-serif;
   font-feature-settings: "kern", "liga", "calt", "onum";
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -33,7 +35,8 @@ body {
 @layer base {
   body {
     background-image:
-      linear-gradient(to bottom, var(--paper) 0%, var(--paper) 100%);
+      radial-gradient(circle at 50% 0%, rgba(246, 243, 238, 0.9), transparent 34rem),
+      linear-gradient(to bottom, var(--paper) 0%, var(--panel) 100%);
   }
 
   h1,
@@ -42,7 +45,7 @@ body {
   h4 {
     font-family: var(--font-display), "Cormorant Garamond", Times, serif;
     font-weight: 500;
-    letter-spacing: -0.01em;
+    letter-spacing: -0.025em;
     color: var(--ink);
   }
 
@@ -59,17 +62,17 @@ body {
 
 @layer components {
   .hairline {
-    border-color: var(--ink);
+    border-color: var(--rule);
     border-style: solid;
     border-width: 1px;
   }
 
   .hairline-t {
-    border-top: 1px solid var(--ink);
+    border-top: 1px solid var(--rule);
   }
 
   .hairline-b {
-    border-bottom: 1px solid var(--ink);
+    border-bottom: 1px solid var(--rule);
   }
 
   .rule-2 {
@@ -83,16 +86,17 @@ body {
   .ledger {
     font-family: var(--font-mono), "JetBrains Mono", Menlo, monospace;
     font-size: 0.6875rem;
-    letter-spacing: 0.16em;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--ink);
+    color: rgba(10, 10, 10, 0.62);
   }
 
   .ledger-sm {
     font-family: var(--font-mono), "JetBrains Mono", Menlo, monospace;
     font-size: 0.625rem;
-    letter-spacing: 0.18em;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
+    color: rgba(10, 10, 10, 0.58);
   }
 
   .stamp-label {
@@ -132,16 +136,16 @@ body {
   }
 
   .body-serif {
-    font-family: var(--font-body), Georgia, serif;
+    font-family: var(--font-body), Inter, system-ui, sans-serif;
     font-size: 1rem;
     line-height: 1.6;
   }
 
   /* Legal-prose body, 17px / 1.65, with old-style numerals and proper kerning */
   .body-prose {
-    font-family: var(--font-body), Georgia, serif;
-    font-size: 17px;
-    line-height: 1.65;
+    font-family: var(--font-body), Inter, system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
     color: var(--ink);
     font-feature-settings: "kern", "liga", "calt", "onum";
   }
@@ -180,29 +184,27 @@ body {
   .display-letterhead {
     font-family: var(--font-display), serif;
     font-weight: 500;
-    line-height: 1.0;
-    letter-spacing: -0.015em;
-    font-size: clamp(2.75rem, 4vw + 1rem, 5.5rem);
+    line-height: 0.98;
+    letter-spacing: -0.035em;
+    font-size: clamp(3rem, 5vw + 0.5rem, 5.75rem);
   }
 
   .display-section {
     font-family: var(--font-display), serif;
     font-weight: 500;
-    line-height: 1.05;
-    letter-spacing: -0.01em;
-    font-size: clamp(2rem, 2vw + 1rem, 3rem);
+    line-height: 1.02;
+    letter-spacing: -0.03em;
+    font-size: clamp(2.1rem, 2vw + 1rem, 3.25rem);
   }
 
-  /* Vertical rhythm: 96px desktop / 56px mobile */
   .section-y {
-    padding-top: clamp(3.5rem, 4vw + 2rem, 6rem);
-    padding-bottom: clamp(3.5rem, 4vw + 2rem, 6rem);
+    padding-top: clamp(5rem, 8vw, 7rem);
+    padding-bottom: clamp(5rem, 8vw, 7rem);
   }
 
-  /* Side gutter: 80px desktop / 24px mobile */
   .gutter-x {
-    padding-left: clamp(1.5rem, 4vw, 5rem);
-    padding-right: clamp(1.5rem, 4vw, 5rem);
+    padding-left: clamp(1.5rem, 4vw, 2rem);
+    padding-right: clamp(1.5rem, 4vw, 2rem);
   }
 
   /* Hover underline animation 180ms, left to right, 1.5px black */
@@ -233,10 +235,12 @@ body {
 
   /* Square-cornered emphasis card */
   .firm-card {
-    border: 1.5px solid var(--ink);
+    border: 1px solid var(--gray);
     background-color: var(--paper);
+    border-radius: 1rem;
     padding: 1.5rem;
     position: relative;
+    box-shadow: 0 18px 60px rgba(10, 10, 10, 0.05);
   }
 
   .firm-card[data-emphasis="true"] {
@@ -282,21 +286,48 @@ body {
   }
 
   .block-press {
-    transition: transform 160ms ease-out, box-shadow 160ms ease-out, background-color 120ms ease-out, color 120ms ease-out;
+    transition: transform 160ms ease-out, box-shadow 160ms ease-out, background-color 120ms ease-out, color 120ms ease-out, opacity 120ms ease-out;
   }
 
   .block-press:hover {
-    transform: translateY(1px);
-    box-shadow: 0 0 0 2px var(--ink), 0 2px 0 0 var(--ink);
+    transform: translateY(-2px);
+    box-shadow: 0 16px 40px rgba(10, 10, 10, 0.08);
   }
 
   .container-grid {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    max-width: 96rem;
-    padding-left: clamp(1rem, 3vw, 2.5rem);
-    padding-right: clamp(1rem, 3vw, 2.5rem);
+    max-width: 72rem;
+    padding-left: clamp(1.5rem, 4vw, 2rem);
+    padding-right: clamp(1.5rem, 4vw, 2rem);
+  }
+
+  .soft-container {
+    border: 1px solid var(--gray);
+    border-radius: 1.5rem;
+    background: rgba(255, 255, 255, 0.82);
+    box-shadow: 0 24px 80px rgba(10, 10, 10, 0.055);
+  }
+
+  .soft-card {
+    border: 1px solid var(--gray);
+    border-radius: 1rem;
+    background: var(--paper);
+    box-shadow: 0 14px 45px rgba(10, 10, 10, 0.045);
+    transition: transform 160ms ease-out, box-shadow 160ms ease-out, border-color 160ms ease-out;
+  }
+
+  .soft-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 55px rgba(10, 10, 10, 0.07);
+    border-color: rgba(10, 10, 10, 0.24);
+  }
+
+  .soft-pill {
+    border: 1px solid var(--gray);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.86);
   }
 
   .vrule {

@@ -5,10 +5,10 @@ import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
   [
-    "inline-flex items-center justify-center gap-3 select-none",
-    "font-mono uppercase tracking-stamp text-[0.6875rem]",
-    "border-2 border-ink",
-    "transition-[background-color,color,transform] duration-150 ease-out",
+    "inline-flex items-center justify-center gap-2 select-none rounded-xl",
+    "font-body text-sm font-medium tracking-[-0.01em]",
+    "border border-transparent",
+    "transition-[background-color,color,transform,box-shadow,border-color,opacity] duration-150 ease-out",
     "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2 focus-visible:ring-offset-paper",
     "disabled:opacity-50 disabled:pointer-events-none",
   ].join(" "),
@@ -16,19 +16,19 @@ const buttonVariants = cva(
     variants: {
       variant: {
         primary:
-          "bg-ink text-paper-cream hover:bg-paper-cream hover:text-ink",
+          "bg-ink text-white shadow-[0_12px_30px_rgba(10,10,10,0.16)] hover:translate-y-[-1px] hover:shadow-[0_16px_36px_rgba(10,10,10,0.18)]",
         ghost:
-          "bg-transparent text-ink hover:bg-ink hover:text-paper-cream",
+          "bg-white text-ink border-gray hover:border-ink/25 hover:bg-paper-cream",
         cream:
-          "bg-paper-cream text-ink hover:bg-ink hover:text-paper-cream",
+          "bg-paper-cream text-ink border-gray hover:bg-white",
         plate:
-          "bg-paper text-ink hover:bg-ink hover:text-paper",
+          "bg-white text-ink border-gray hover:bg-paper-cream",
       },
       size: {
-        default: "h-12 px-6",
-        lg: "h-14 px-8 text-[0.75rem]",
-        sm: "h-10 px-4",
-        xl: "h-16 px-10 text-[0.8125rem]",
+        default: "h-11 px-5",
+        lg: "h-12 px-6 text-sm",
+        sm: "h-9 px-4 text-xs",
+        xl: "h-14 px-8 text-base",
       },
     },
     defaultVariants: {

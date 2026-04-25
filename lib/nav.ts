@@ -11,12 +11,12 @@ export const primaryNav: NavItem[] = [
   { letter: "A", label: "Audit", serif: "Audit", href: "/audit" },
   { letter: "S", label: "Scripts", serif: "Scripts", href: "/scripts" },
   { letter: "I", label: "Integrations", serif: "Integrations", href: "/integrations" },
-  { letter: "X", label: "Index", serif: "Index", href: "/about" },
+  { letter: "T", label: "Contact", serif: "Contact", href: "/contact" },
 ];
 
 export const siteConfig = {
   name: "Brown & Sullivan",
-  tagline: "Compliance Counsel for Regulated Distribution",
+  tagline: "Compliance Infrastructure for Regulated Distribution",
   established: "EST · MMXXV · TEXAS · LICENSED IN XXXVII STATES",
   reference: "REF · BS-COMP-001 · TCPA · CMS · HIPAA",
   build: "BUILD · BS.OS · v.MMXXVI.IV",

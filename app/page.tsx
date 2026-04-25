@@ -1,23 +1,21 @@
-import { LetterheadHero } from "@/components/sections/home/letterhead-hero";
-import { NoticeToConsumers } from "@/components/sections/home/notice-to-consumers";
-import { PracticeAreas } from "@/components/sections/home/practice-areas";
-import { Engagement } from "@/components/sections/home/engagement";
-import { TheRecord } from "@/components/sections/home/the-record";
-import { LicensureAppointments } from "@/components/sections/home/licensure-appointments";
-import { ComplianceProgram } from "@/components/sections/home/compliance-program";
-import { Retainer } from "@/components/sections/home/retainer";
+import { AdvisoryModules } from "@/components/sections/home/advisory-modules";
+import { AuditSystem } from "@/components/sections/home/audit-system";
+import { DisclosureAccordion } from "@/components/sections/home/disclosure-accordion";
+import { JurisdictionPills } from "@/components/sections/home/jurisdiction-pills";
+import { MinimalCta } from "@/components/sections/home/minimal-cta";
+import { MinimalHero } from "@/components/sections/home/minimal-hero";
+import { WorkflowSystem } from "@/components/sections/home/workflow-system";
 
 export default function HomePage() {
   return (
     <>
-      <LetterheadHero />
-      <NoticeToConsumers />
-      <PracticeAreas />
-      <Engagement />
-      <TheRecord />
-      <LicensureAppointments />
-      <ComplianceProgram />
-      <Retainer />
+      <MinimalHero />
+      <DisclosureAccordion />
+      <AdvisoryModules />
+      <WorkflowSystem />
+      <AuditSystem />
+      <JurisdictionPills />
+      <MinimalCta />
     </>
   );
 }

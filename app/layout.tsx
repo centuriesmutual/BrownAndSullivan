@@ -1,9 +1,15 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Archivo_Black, Source_Serif_4, JetBrains_Mono } from "next/font/google";
+import {
+  Cormorant_Garamond,
+  Archivo_Black,
+  Inter,
+  JetBrains_Mono,
+} from "next/font/google";
 import { UtilityBar } from "@/components/layout/utility-bar";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { SearchShortcut } from "@/components/layout/search-shortcut";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const display = Cormorant_Garamond({
@@ -21,10 +27,9 @@ const block = Archivo_Black({
   display: "swap",
 });
 
-const body = Source_Serif_4({
+const body = Inter({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
-  style: ["normal", "italic"],
   variable: "--font-body",
   display: "swap",
 });
@@ -37,14 +42,14 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Brown & Sullivan — Compliance Directory for Regulated Distribution",
+  title: "Brown & Sullivan — Medicare & ACA Compliance Infrastructure",
   description:
-    "A compliance-grade directory of artifacts, agents, carriers, and regulatory frameworks for Medicare, ACA, and TCPA-governed distribution. Counsel for the regulated.",
+    "A controlled operating interface for Medicare, ACA, and TCPA-governed distribution.",
   metadataBase: new URL("https://brownandsullivan.example"),
   openGraph: {
     title: "Brown & Sullivan",
     description:
-      "Compliance counsel and the directory of record for regulated distribution.",
+      "Compliance infrastructure for regulated health insurance distribution.",
     type: "website",
   },
   robots: { index: true, follow: true },
@@ -66,6 +71,7 @@ export default function RootLayout({
         <main className="animate-paper-fade">{children}</main>
         <Footer />
         <SearchShortcut />
+        <Analytics />
       </body>
     </html>
   );
