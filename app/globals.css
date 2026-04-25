@@ -1,0 +1,354 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #0a0a0a;
+  --ink-wash: #2c2c2c;
+  --paper: #fafafa;
+  --paper-cream: #f4efe6;
+  --rule: #0a0a0a;
+}
+
+html,
+body {
+  background-color: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body), Georgia, serif;
+  font-feature-settings: "kern", "liga", "calt", "onum";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background-color: var(--ink);
+  color: var(--paper-cream);
+}
+
+:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+}
+
+@layer base {
+  body {
+    background-image:
+      linear-gradient(to bottom, var(--paper) 0%, var(--paper) 100%);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display), "Cormorant Garamond", Times, serif;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+  }
+
+  hr {
+    border-color: var(--ink);
+    border-top-width: 1px;
+  }
+
+  a {
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+  }
+}
+
+@layer components {
+  .hairline {
+    border-color: var(--ink);
+    border-style: solid;
+    border-width: 1px;
+  }
+
+  .hairline-t {
+    border-top: 1px solid var(--ink);
+  }
+
+  .hairline-b {
+    border-bottom: 1px solid var(--ink);
+  }
+
+  .rule-2 {
+    border: 2px solid var(--ink);
+  }
+
+  .rule-3 {
+    border: 3px solid var(--ink);
+  }
+
+  .ledger {
+    font-family: var(--font-mono), "JetBrains Mono", Menlo, monospace;
+    font-size: 0.6875rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink);
+  }
+
+  .ledger-sm {
+    font-family: var(--font-mono), "JetBrains Mono", Menlo, monospace;
+    font-size: 0.625rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+
+  .stamp-label {
+    font-family: var(--font-mono), monospace;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    font-size: 0.625rem;
+  }
+
+  .display-headline {
+    font-family: var(--font-display), serif;
+    font-weight: 500;
+    line-height: 0.96;
+    letter-spacing: -0.02em;
+    font-size: clamp(2.5rem, 6.5vw, 5.5rem);
+  }
+
+  .display-headline-sm {
+    font-family: var(--font-display), serif;
+    font-weight: 500;
+    line-height: 1.02;
+    letter-spacing: -0.015em;
+    font-size: clamp(1.75rem, 3.4vw, 2.75rem);
+  }
+
+  .block-anchor {
+    font-family: var(--font-block), system-ui, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    line-height: 0.86;
+  }
+
+  .block-letter {
+    font-family: var(--font-block), system-ui, sans-serif;
+    text-transform: uppercase;
+    line-height: 0.78;
+  }
+
+  .body-serif {
+    font-family: var(--font-body), Georgia, serif;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  /* Legal-prose body, 17px / 1.65, with old-style numerals and proper kerning */
+  .body-prose {
+    font-family: var(--font-body), Georgia, serif;
+    font-size: 17px;
+    line-height: 1.65;
+    color: var(--ink);
+    font-feature-settings: "kern", "liga", "calt", "onum";
+  }
+
+  .body-prose-wash {
+    color: var(--ink-wash);
+  }
+
+  /* Small caps via OpenType for serif headings */
+  .smcp {
+    font-variant: small-caps;
+    letter-spacing: 0.04em;
+  }
+
+  /* Section-opener filing index: small black square + Roman numeral in mono */
+  .filing-index {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.625rem;
+    font-family: var(--font-mono), monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-size: 0.6875rem;
+    color: var(--ink);
+  }
+
+  .filing-index::before {
+    content: "";
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: var(--ink);
+  }
+
+  /* Display headline scales for the law-firm hero */
+  .display-letterhead {
+    font-family: var(--font-display), serif;
+    font-weight: 500;
+    line-height: 1.0;
+    letter-spacing: -0.015em;
+    font-size: clamp(2.75rem, 4vw + 1rem, 5.5rem);
+  }
+
+  .display-section {
+    font-family: var(--font-display), serif;
+    font-weight: 500;
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+    font-size: clamp(2rem, 2vw + 1rem, 3rem);
+  }
+
+  /* Vertical rhythm: 96px desktop / 56px mobile */
+  .section-y {
+    padding-top: clamp(3.5rem, 4vw + 2rem, 6rem);
+    padding-bottom: clamp(3.5rem, 4vw + 2rem, 6rem);
+  }
+
+  /* Side gutter: 80px desktop / 24px mobile */
+  .gutter-x {
+    padding-left: clamp(1.5rem, 4vw, 5rem);
+    padding-right: clamp(1.5rem, 4vw, 5rem);
+  }
+
+  /* Hover underline animation 180ms, left to right, 1.5px black */
+  .firm-link {
+    position: relative;
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .firm-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 1.5px;
+    width: 100%;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 180ms ease-out;
+  }
+
+  .firm-link:hover::after,
+  .firm-link:focus-visible::after {
+    transform: scaleX(1);
+  }
+
+  /* Square-cornered emphasis card */
+  .firm-card {
+    border: 1.5px solid var(--ink);
+    background-color: var(--paper);
+    padding: 1.5rem;
+    position: relative;
+  }
+
+  .firm-card[data-emphasis="true"] {
+    border-width: 2px;
+  }
+
+  .firm-card-corner::after {
+    content: "";
+    position: absolute;
+    bottom: 0.75rem;
+    right: 0.75rem;
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: var(--ink);
+  }
+
+  .roman {
+    font-family: var(--font-display), serif;
+    font-variant-numeric: oldstyle-nums;
+    letter-spacing: 0.04em;
+  }
+
+  .corner-dot::after {
+    content: "";
+    position: absolute;
+    bottom: 0.625rem;
+    right: 0.625rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: var(--ink);
+  }
+
+  .stamp-mark {
+    border: 2px solid var(--ink);
+    color: var(--ink);
+    text-transform: uppercase;
+    font-family: var(--font-mono), monospace;
+    letter-spacing: 0.18em;
+    transform: rotate(-3deg);
+    padding: 0.25rem 0.625rem;
+    display: inline-block;
+    font-weight: 700;
+  }
+
+  .block-press {
+    transition: transform 160ms ease-out, box-shadow 160ms ease-out, background-color 120ms ease-out, color 120ms ease-out;
+  }
+
+  .block-press:hover {
+    transform: translateY(1px);
+    box-shadow: 0 0 0 2px var(--ink), 0 2px 0 0 var(--ink);
+  }
+
+  .container-grid {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 96rem;
+    padding-left: clamp(1rem, 3vw, 2.5rem);
+    padding-right: clamp(1rem, 3vw, 2.5rem);
+  }
+
+  .vrule {
+    background: linear-gradient(
+      to bottom,
+      transparent 0,
+      transparent 0.5rem,
+      var(--ink) 0.5rem,
+      var(--ink) calc(100% - 0.5rem),
+      transparent calc(100% - 0.5rem)
+    );
+    width: 1px;
+  }
+
+  /* card-catalog drawer style search */
+  .catalog-search input {
+    font-family: var(--font-mono), monospace;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    width: 100%;
+    padding: 0.875rem 0;
+    font-size: 0.8125rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink);
+  }
+
+  .catalog-search input::placeholder {
+    color: rgba(10, 10, 10, 0.55);
+    letter-spacing: 0.22em;
+  }
+}
+
+@layer utilities {
+  .grid-areas-footer {
+    grid-template-areas:
+      "wordmark wordmark wordmark wordmark wordmark wordmark"
+      "directory compliance operations products jurisdictions firm"
+      "reference reference reference reference reference reference"
+      "alphabet alphabet alphabet alphabet alphabet alphabet"
+      "colophon colophon colophon colophon colophon colophon";
+  }
+
+  .area-wordmark { grid-area: wordmark; }
+  .area-directory { grid-area: directory; }
+  .area-compliance { grid-area: compliance; }
+  .area-operations { grid-area: operations; }
+  .area-products { grid-area: products; }
+  .area-jurisdictions { grid-area: jurisdictions; }
+  .area-firm { grid-area: firm; }
+  .area-reference { grid-area: reference; }
+  .area-alphabet { grid-area: alphabet; }
+  .area-colophon { grid-area: colophon; }
+}
