@@ -37,33 +37,14 @@ export function JurisdictionPills() {
                 </div>
               </article>
 
-              <article className="rounded-2xl border border-gray bg-white p-5 shadow-[0_12px_34px_rgba(10,10,10,0.04)]">
-                <div className="mb-5 flex items-start justify-between gap-4">
-                  <div className="flex items-start gap-3">
-                    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-ink text-sm font-semibold text-white">
-                      AZ
-                    </span>
-                    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-ink text-sm font-semibold text-white">
-                      NC
-                    </span>
-                  </div>
-                  <span className="rounded-full bg-paper-cream px-3 py-1 text-xs font-medium text-ink-wash">
-                    Active market
-                  </span>
-                </div>
-                <h3 className="text-xl">Arizona + North Carolina</h3>
-                <p className="mt-2 text-sm leading-6 text-ink-wash">
-                  Medicare and ACA appointment review, consumer representation,
-                  and agent assignment are active in a shared market exchange
-                  lane.
-                </p>
-                <Link
-                  href="/contact"
-                  className="mt-5 inline-flex h-10 items-center justify-center rounded-xl border border-gray bg-paper-cream px-4 text-sm font-medium text-ink transition hover:-translate-y-0.5 hover:border-ink/25 hover:bg-white"
-                >
-                  Market Exchange →
-                </Link>
-              </article>
+              <Link
+                href="/contact"
+                className="group block rounded-2xl border-2 border-ink bg-ink px-6 py-8 text-center text-white shadow-[0_12px_34px_rgba(10,10,10,0.12)] transition hover:-translate-y-0.5 hover:shadow-[0_18px_40px_rgba(10,10,10,0.18)]"
+              >
+                <span className="font-body text-2xl font-semibold tracking-[-0.02em] sm:text-3xl">
+                  Market<span className="text-white/45">·</span>Exchange
+                </span>
+              </Link>
             </div>
           </div>
 
