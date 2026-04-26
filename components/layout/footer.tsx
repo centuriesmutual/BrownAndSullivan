@@ -25,7 +25,7 @@ const operations = [
   { label: "Do Not Sell", href: "/do-not-sell" },
   { label: "Box Sync", href: "/integrations#box" },
   { label: "Rewards", href: "/rewards" },
-  { label: "Power Dialer", href: "/directory#operations" },
+  { label: "Claims", href: "/claims" },
   { label: "Voice Verification", href: "/scripts#verification" },
   { label: "Live Transfer", href: "/directory#operations" },
 ];
