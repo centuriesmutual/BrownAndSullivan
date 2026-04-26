@@ -17,23 +17,17 @@ export function MinimalHero() {
             </p>
             <div className="mt-8 grid max-w-xl gap-3 border-l border-gray pl-5 text-sm leading-6 text-ink-wash">
               <p>
-                Medicare Advantage, Prescription Drug, and related Medicare
-                products are offered only through controlled intake; required
-                notices and disclosures are provided as applicable under the
-                Medicare Communications and Marketing Guidelines and
-                carrier-filed materials; and enrollment and counseling
-                activities are performed by personnel who are licensed and
-                appointed as required by CMS and the applicable carrier.
+                Medicare lines use controlled intake; notices and scripts follow
+                the Medicare Communications and Marketing Guidelines and
+                carrier-filed materials; selling and counseling are by personnel
+                licensed and appointed as CMS and each carrier require.
               </p>
               <p>
-                Federally Facilitated Marketplace and state-based Marketplace
-                (ACA) matters, where the firm represents a client, are handled
-                with the same intake, documentation, and disclosure discipline.
-                The firm is currently licensed and appointed to transact in
-                Texas, Arizona, and North Carolina; product availability is
-                limited to those jurisdictions unless and until additional
-                licensure and appointments are obtained and reflected in firm
-                records.
+                Federally Facilitated and state-based Marketplace (ACA) matters
+                are handled with the same intake and disclosure standard where
+                the firm represents a client. It is licensed and appointed in
+                Texas, Arizona, and North Carolina; offerings follow those
+                appointments unless and until the firm files and posts more.
               </p>
             </div>
             <div className="mt-9 flex flex-wrap gap-3">
