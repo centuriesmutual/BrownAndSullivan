@@ -18,7 +18,7 @@ export function UtilityBar() {
           </li>
           <li className="hidden lg:flex items-center gap-2">
             <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full bg-ink/45" />
-            <span>CMS Approved</span>
+            <span>CMS Reviewed</span>
           </li>
         </ul>
         <ul className="flex flex-wrap items-center gap-x-6 gap-y-1 ledger-sm">
