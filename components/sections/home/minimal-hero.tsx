@@ -23,11 +23,11 @@ export function MinimalHero() {
               </p>
             </div>
             <div className="mt-9 flex flex-wrap gap-3">
-              <LinkButton href="/directory" size="lg">
-                View Directory
+              <LinkButton href="/practice" size="lg">
+                Our Practice
               </LinkButton>
-              <LinkButton href="/compliance" variant="ghost" size="lg">
-                View Disclosures
+              <LinkButton href="/contact" variant="ghost" size="lg">
+                Request Appointment
               </LinkButton>
             </div>
           </div>
