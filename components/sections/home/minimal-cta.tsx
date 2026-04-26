@@ -64,12 +64,10 @@ export function MinimalCta() {
               <h2 className="display-section max-w-2xl text-balance">
                 Matter memos, delivered your mail client.
               </h2>
-              <p className="mt-4 max-w-2xl text-sm leading-7 text-ink-wash sm:text-[15px] sm:leading-8">
-                This step is for initial contact only. You draft a structured first
-                note in your own mail environment; protected health information
-                should not be included at this stage. The firm routes the message,
-                runs conflicts and internal screening, and aims to respond on
-                business days in line with desk policy and volume.
+              <p className="mt-4 max-w-xl text-sm leading-7 text-ink-wash sm:text-[15px] sm:leading-8">
+                Initial contact only: draft a short first note in your mail app—no
+                PHI. The firm routes it, runs conflicts, and replies on business
+                days subject to desk policy and volume.
               </p>
 
               <div className="mt-8 overflow-hidden rounded-2xl border border-gray/70 bg-paper/90">
@@ -97,16 +95,18 @@ export function MinimalCta() {
                 </ul>
               </div>
 
-              <button
-                type="button"
-                onClick={() => {
-                  setSent(false);
-                  setOpen(true);
-                }}
-                className="mt-8 inline-flex h-12 min-w-[12rem] items-center justify-center rounded-full bg-ink px-7 text-sm font-medium text-white shadow-[0_10px_34px_rgba(10,10,10,0.18)] transition hover:-translate-y-0.5 hover:bg-ink/95 hover:shadow-[0_14px_40px_rgba(10,10,10,0.22)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2"
-              >
-                Contact us
-              </button>
+              <div className="mt-8 flex justify-center">
+                <button
+                  type="button"
+                  onClick={() => {
+                    setSent(false);
+                    setOpen(true);
+                  }}
+                  className="inline-flex h-12 min-w-[12rem] items-center justify-center rounded-full bg-ink px-7 text-sm font-medium text-white shadow-[0_10px_34px_rgba(10,10,10,0.18)] transition hover:-translate-y-0.5 hover:bg-ink/95 hover:shadow-[0_14px_40px_rgba(10,10,10,0.22)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2"
+                >
+                  Contact us
+                </button>
+              </div>
             </div>
 
             <aside className="border-t border-gray bg-paper-cream/70 p-8 md:p-10 lg:border-l lg:border-t-0 lg:p-12">
