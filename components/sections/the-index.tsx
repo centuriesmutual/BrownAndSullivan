@@ -40,7 +40,7 @@ const indexCards = [
   },
   {
     code: "REF · 600.0 · REG",
-    title: "Regulatory Framework",
+    title: "Policy Directives",
     summary:
       "TCPA, CMS Marketing Rules, HIPAA, FTC TSR, and the several State DOI regimes governing every outbound contact.",
     metadata: [

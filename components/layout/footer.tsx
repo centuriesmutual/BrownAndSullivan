@@ -7,7 +7,7 @@ const directory = [
   { label: "Compliance Artifacts", href: "/compliance-artifacts" },
   { label: "Agent Registry", href: "/agents" },
   { label: "Carrier Catalog", href: "/directory#carrier-catalog" },
-  { label: "Regulatory Framework", href: "/directory#regulatory-framework" },
+  { label: "Policy Directives", href: "/policy-directives" },
   { label: "Script Library", href: "/scripts" },
   { label: "Audit Packages", href: "/audit" },
 ];
