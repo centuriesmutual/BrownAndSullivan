@@ -7,9 +7,6 @@ export function MinimalHero() {
       <div className="container-grid">
         <div className="grid gap-12 lg:grid-cols-[1.02fr_0.98fr] lg:items-center">
           <div className="max-w-3xl">
-            <div className="soft-pill mb-8 inline-flex px-3 py-1.5 text-xs font-medium uppercase tracking-[0.12em] text-ink-wash">
-              Medicare · ACA · Regulatory Counsel
-            </div>
             <h1 className="display-letterhead max-w-4xl">
               Counsel for regulated health insurance distribution.
             </h1>

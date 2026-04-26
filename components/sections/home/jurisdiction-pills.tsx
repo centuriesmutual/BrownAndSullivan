@@ -38,26 +38,29 @@ export function JurisdictionPills() {
               </article>
 
               <article className="rounded-2xl border border-gray bg-white p-5 shadow-[0_12px_34px_rgba(10,10,10,0.04)]">
-                <h3 className="font-body text-lg font-semibold tracking-[-0.02em] text-ink sm:text-xl">
-                  Market
-                  <span className="text-ink/35">·</span>
-                  Exchange
-                </h3>
-                <p className="mt-3 text-sm leading-6 text-ink-wash">
-                  Carrier inquiries, QHP and Medicare distribution questions, and
-                  structured intake for organizations seeking to coordinate with
-                  the firm&rsquo;s compliance desk. Contact routes to engagement
-                  staff for a written response; not a public trading venue.
+                <p className="text-xs font-medium uppercase tracking-[0.16em] text-ink/55">
+                  External desk · coordination
                 </p>
-                <div className="mt-5 flex flex-wrap items-center justify-between gap-3 border-t border-gray/80 pt-5">
-                  <p className="text-xs font-medium uppercase tracking-[0.14em] text-ink/50">
-                    Outbound from this page
-                  </p>
+                <p className="mt-3 text-sm leading-6 text-ink-wash">
+                  If you are a carrier, platform, or distribution organization, use
+                  this path to hand off QHP, Medicare, or line-of-business questions
+                  to the firm&rsquo;s compliance desk. Submissions are triaged
+                  in-house, conflict-checked, and returned in writing.
+                  Not a trading floor or consumer quote flow—an intake for
+                  professional coordination only.
+                </p>
+                <p className="mt-3 text-xs font-medium leading-5 text-ink/50">
+                  Use the control below. It opens the contact page the desk uses
+                  to log and answer these requests.
+                </p>
+                <div className="mt-5 border-t border-gray/80 pt-5">
                   <Link
                     href="/contact"
-                    className="inline-flex h-10 shrink-0 items-center justify-center rounded-full border border-ink bg-ink px-5 text-sm font-medium text-white transition hover:-translate-y-0.5 hover:bg-ink/95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2"
+                    className="flex w-full min-h-12 items-center justify-center rounded-2xl border-2 border-ink bg-ink px-4 text-center text-base font-semibold tracking-[-0.02em] text-white shadow-[0_12px_28px_rgba(10,10,10,0.16)] transition hover:-translate-y-0.5 hover:bg-ink/95 hover:shadow-[0_16px_36px_rgba(10,10,10,0.2)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2"
                   >
-                    Open contact
+                    <span>Market</span>
+                    <span className="mx-0.5 text-white/50">·</span>
+                    <span>Exchange</span>
                   </Link>
                 </div>
               </article>
