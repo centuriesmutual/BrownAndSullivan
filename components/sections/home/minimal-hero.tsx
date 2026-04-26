@@ -46,7 +46,7 @@ export function MinimalHero() {
               <LinkButton href="/directory" size="lg">
                 View Directory
               </LinkButton>
-              <LinkButton href="#disclosures" variant="ghost" size="lg">
+              <LinkButton href="/compliance" variant="ghost" size="lg">
                 View Disclosures
               </LinkButton>
             </div>
