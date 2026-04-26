@@ -4,10 +4,10 @@ import Link from "next/link";
 import { siteConfig } from "@/lib/nav";
 
 const directory = [
-  { label: "About Us", href: "/about" },
+  { label: "Search", href: "/search" },
   { label: "Agent Registry", href: "/agents" },
-  { label: "New Enrollment", href: "/new-enrollment" },
-  { label: "Script Library", href: "/scripts" },
+  { label: "Submit Enrollment", href: "/new-enrollment" },
+  { label: "Documents", href: "/documents" },
   { label: "Audit Packages", href: "/audit" },
   { label: "Compliance Artifacts", href: "/compliance-artifacts" },
 ];
@@ -32,7 +32,7 @@ const operations = [
 
 const products = [
   { label: "Medicare Advantage", href: "/directory#carrier-catalog" },
-  { label: "Medicare Part D", href: "/directory#carrier-catalog" },
+  { label: "Property & Casualty", href: "/property-casualty" },
   { label: "Medicare Supplement", href: "/directory#carrier-catalog" },
   { label: "ACA Marketplace", href: "/directory#carrier-catalog" },
   { label: "Dental & Vision", href: "/directory#carrier-catalog" },
@@ -47,7 +47,7 @@ const jurisdictions = [
 
 const firm = [
   { label: "About", href: "/about" },
-  { label: "Agents", href: "/agents" },
+  { label: "Careers", href: "/careers" },
   { label: "Contact", href: "/contactus" },
   { label: "Legal", href: "/legal" },
 ];
