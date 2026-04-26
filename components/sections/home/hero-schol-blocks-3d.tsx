@@ -71,7 +71,7 @@ function ScholScene() {
           rotation={[-Math.PI / 2, 0, 0]}
           position={[0, -0.5, 0]}
         >
-          <planeGeometry args={[9, 9]} />
+          <planeGeometry args={[14, 14]} />
           <meshStandardMaterial color={ground} roughness={0.95} metalness={0} />
         </mesh>
 
@@ -79,6 +79,7 @@ function ScholScene() {
         <group
           position={[0, 0, 0]}
           rotation={[-0.18, 0.42, 0.04]}
+          scale={0.82}
         >
           <LetterBlock
             letter="B"
@@ -116,9 +117,9 @@ function ScholScene() {
 
 export function HeroScholBlocks3D() {
   return (
-    <div className="relative aspect-[6/7] w-full min-h-[380px] overflow-hidden rounded-[1.25rem] bg-[#F2F0EC]">
+    <div className="relative aspect-[5/6] w-full min-h-[400px] overflow-hidden rounded-[1.25rem] bg-[#F2F0EC] sm:min-h-[440px] lg:min-h-[480px]">
       <Canvas
-        camera={{ position: [3.6, 2.4, 4.2], fov: 40, near: 0.1, far: 100 }}
+        camera={{ position: [6.2, 3.9, 8.2], fov: 48, near: 0.1, far: 100 }}
         shadows
         gl={{
           antialias: true,

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/lib/nav";
 
@@ -89,6 +90,14 @@ export function Footer() {
             >
               {siteConfig.name}
             </Link>
+            <Image
+              src="/footer-mark.svg"
+              alt=""
+              width={120}
+              height={40}
+              unoptimized
+              className="mt-3 h-8 w-auto opacity-90"
+            />
             <p className="mt-4 text-sm leading-6 text-ink-wash">
               Controlled compliance infrastructure for Medicare, ACA, and
               TCPA-governed distribution.

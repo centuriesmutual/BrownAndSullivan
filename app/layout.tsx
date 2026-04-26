@@ -51,6 +51,14 @@ export const metadata: Metadata = {
     description:
       "Compliance infrastructure for regulated health insurance distribution.",
     type: "website",
+    locale: "en_US",
+    siteName: "Brown & Sullivan",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Brown & Sullivan",
+    description:
+      "Compliance infrastructure for regulated health insurance distribution.",
   },
   robots: { index: true, follow: true },
 };
