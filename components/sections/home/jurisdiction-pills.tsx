@@ -37,10 +37,15 @@ export function JurisdictionPills() {
                 </div>
               </article>
 
-              <article className="rounded-2xl border border-gray bg-white p-3 shadow-[0_12px_34px_rgba(10,10,10,0.04)]">
+              <article className="rounded-2xl border border-gray bg-white p-4 shadow-[0_12px_34px_rgba(10,10,10,0.04)]">
+                <p className="text-xs leading-relaxed text-ink-wash">
+                  For carriers, platforms, and distribution partners: one path to
+                  the engagement desk. Opens the contact page for triage, conflict
+                  review, and a written follow-up.
+                </p>
                 <Link
                   href="/contact"
-                  className="flex w-full min-h-12 items-center justify-center rounded-xl border-2 border-ink bg-ink px-4 text-center text-base font-semibold tracking-[-0.02em] text-white shadow-[0_12px_28px_rgba(10,10,10,0.14)] transition hover:-translate-y-0.5 hover:bg-ink/95 hover:shadow-[0_16px_36px_rgba(10,10,10,0.2)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2"
+                  className="mt-3 flex w-full min-h-12 items-center justify-center rounded-xl border-2 border-ink bg-ink px-4 text-center text-base font-semibold tracking-[-0.02em] text-white shadow-[0_12px_28px_rgba(10,10,10,0.14)] transition hover:-translate-y-0.5 hover:bg-ink/95 hover:shadow-[0_16px_36px_rgba(10,10,10,0.2)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2"
                 >
                   <span>Market</span>
                   <span className="mx-0.5 text-white/50">·</span>

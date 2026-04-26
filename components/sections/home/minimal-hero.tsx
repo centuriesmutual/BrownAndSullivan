@@ -17,12 +17,23 @@ export function MinimalHero() {
             </p>
             <div className="mt-8 grid max-w-xl gap-3 border-l border-gray pl-5 text-sm leading-6 text-ink-wash">
               <p>
-                Medicare and ACA matters are handled through controlled intake,
-                documented notice, and review by licensed personnel.
+                Medicare Advantage, Prescription Drug, and related Medicare
+                products are offered only through controlled intake; required
+                notices and disclosures are provided as applicable under the
+                Medicare Communications and Marketing Guidelines and
+                carrier-filed materials; and enrollment and counseling
+                activities are performed by personnel who are licensed and
+                appointed as required by CMS and the applicable carrier.
               </p>
               <p>
-                The firm is presently active in Texas, Arizona, and North
-                Carolina.
+                Federally Facilitated Marketplace and state-based Marketplace
+                (ACA) matters, where the firm represents a client, are handled
+                with the same intake, documentation, and disclosure discipline.
+                The firm is currently licensed and appointed to transact in
+                Texas, Arizona, and North Carolina; product availability is
+                limited to those jurisdictions unless and until additional
+                licensure and appointments are obtained and reflected in firm
+                records.
               </p>
             </div>
             <div className="mt-9 flex flex-wrap gap-3">

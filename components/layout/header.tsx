@@ -8,8 +8,7 @@ export function Header() {
       <div className="container-grid py-4">
         <Link
           href="/"
-          className="inline-block transition-opacity hover:opacity-80"
-          aria-label={siteConfig.name}
+          className="group inline-flex items-center gap-3 text-ink transition-opacity hover:opacity-80"
         >
           <Image
             src="/footer-mark.svg"
@@ -17,9 +16,12 @@ export function Header() {
             width={98}
             height={40}
             unoptimized
-            className="h-8 w-auto opacity-90"
+            className="h-8 w-auto opacity-90 transition group-hover:opacity-100"
             role="presentation"
           />
+          <span className="font-body text-sm font-semibold uppercase tracking-[0.24em]">
+            {siteConfig.name}
+          </span>
         </Link>
       </div>
     </header>
