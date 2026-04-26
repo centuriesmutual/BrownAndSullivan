@@ -4,7 +4,7 @@ import Link from "next/link";
 import { siteConfig } from "@/lib/nav";
 
 const directory = [
-  { label: "Compliance Artifacts", href: "/directory#artifacts" },
+  { label: "Compliance Artifacts", href: "/compliance-artifacts" },
   { label: "Agent Registry", href: "/agents" },
   { label: "Carrier Catalog", href: "/directory#carrier-catalog" },
   { label: "Regulatory Framework", href: "/directory#regulatory-framework" },
