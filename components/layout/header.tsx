@@ -5,7 +5,7 @@ import { siteConfig } from "@/lib/nav";
 export function Header() {
   return (
     <header className="border-b border-gray bg-white/86 backdrop-blur-xl">
-      <div className="container-grid py-4">
+      <div className="container-grid flex flex-wrap items-center justify-between gap-4 py-4">
         <Link
           href="/"
           className="group inline-flex items-center gap-3 text-ink transition-opacity hover:opacity-80"
@@ -22,6 +22,12 @@ export function Header() {
           <span className="font-body text-sm font-semibold uppercase tracking-[0.24em]">
             {siteConfig.name}
           </span>
+        </Link>
+        <Link
+          href="/contactus"
+          className="text-sm font-medium text-ink transition hover:opacity-80"
+        >
+          Contact us
         </Link>
       </div>
     </header>

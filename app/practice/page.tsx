@@ -42,8 +42,8 @@ export default function PracticePage() {
           <LinkButton href="/about" size="lg" variant="ghost">
             About the firm
           </LinkButton>
-          <LinkButton href="/contact" size="lg">
-            Request appointment
+          <LinkButton href="/contactus" size="lg">
+            Contact us
           </LinkButton>
         </div>
       </section>

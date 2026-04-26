@@ -26,8 +26,8 @@ export function MinimalHero() {
               <LinkButton href="/practice" size="lg">
                 Our Practice
               </LinkButton>
-              <LinkButton href="/contact" variant="ghost" size="lg">
-                Request Appointment
+              <LinkButton href="/contactus" variant="ghost" size="lg">
+                Contact us
               </LinkButton>
             </div>
           </div>

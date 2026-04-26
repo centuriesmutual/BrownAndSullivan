@@ -44,7 +44,7 @@ export function JurisdictionPills() {
                   review, and a written follow-up.
                 </p>
                 <Link
-                  href="/contact"
+                  href="/contactus"
                   className="mt-3 flex w-full min-h-12 items-center justify-center rounded-xl border-2 border-ink bg-ink px-4 text-center text-base font-semibold tracking-[-0.02em] text-white shadow-[0_12px_28px_rgba(10,10,10,0.14)] transition hover:-translate-y-0.5 hover:bg-ink/95 hover:shadow-[0_16px_36px_rgba(10,10,10,0.2)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2"
                 >
                   <span>Market</span>
