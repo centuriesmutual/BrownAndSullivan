@@ -1,11 +1,13 @@
 import { PageTitle } from "@/components/ui/page-title";
 import { LinkButton } from "@/components/ui/button";
+import { pageMetadata } from "@/lib/seo-metadata";
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: "Our Practice · Brown & Sullivan",
   description:
     "How the firm is organized for Medicare, ACA, and TCPA-governed distribution: intake, record, and counsel under appointment.",
-};
+  path: "/practice",
+});
 
 export default function PracticePage() {
   return (

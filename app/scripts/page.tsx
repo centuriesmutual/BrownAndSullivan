@@ -1,11 +1,13 @@
 import { PageTitle } from "@/components/ui/page-title";
 import { salesScripts, type ScriptDomain } from "@/content/scripts";
+import { pageMetadata } from "@/lib/seo-metadata";
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: "Scripts Library · Brown & Sullivan",
   description:
     "Versioned, regulator-ready sales scripts for ACA Marketplace and Medicare distribution.",
-};
+  path: "/scripts",
+});
 
 const domains: ScriptDomain[] = ["ACA", "Medicare", "Compliance", "Verification"];
 

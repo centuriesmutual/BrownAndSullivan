@@ -4,16 +4,18 @@ import {
   FilingExhibitRequestBlurb,
 } from "@/components/filing-exhibits/filing-exhibit-list";
 import { directoryEntries } from "@/content/directory";
+import { pageMetadata } from "@/lib/seo-metadata";
 
 const policyDirectives = directoryEntries.filter(
   (e) => e.category === "Regulatory Framework"
 );
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: "Policy Directives · Brown & Sullivan",
   description:
     "Firm policy directives tied to TCPA, CMS MCMG, HIPAA, state DOI, and FTC TSR—mapped to operating controls and review cycles.",
-};
+  path: "/policy-directives",
+});
 
 export default function PolicyDirectivesPage() {
   return (

@@ -37,12 +37,12 @@ export function SearchShortcut() {
       role="dialog"
       aria-modal="true"
       aria-labelledby="search-shortcut-title"
-      className="fixed inset-0 z-50 flex items-start justify-center bg-ink/70 px-4 pt-20"
+      className="fixed inset-0 z-50 flex items-start justify-center bg-ink/70 px-4 pt-[max(5rem,calc(0.5rem+env(safe-area-inset-top,0px)))]"
       onClick={() => setOpen(false)}
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="w-full max-w-2xl bg-paper-cream border-2 border-ink animate-drawer-pull"
+        className="w-full max-h-[min(85dvh,36rem)] max-w-2xl overflow-y-auto bg-paper-cream border-2 border-ink animate-drawer-pull"
       >
         <div className="flex items-center justify-between px-4 py-2 border-b border-ink ledger-sm">
           <span id="search-shortcut-title">CARD · CATALOG · DRAWER · 0001</span>

@@ -1,12 +1,14 @@
 import { PageTitle } from "@/components/ui/page-title";
 import { LinkButton } from "@/components/ui/button";
 import { toRoman } from "@/lib/utils";
+import { pageMetadata } from "@/lib/seo-metadata";
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: "Audit · Brown & Sullivan",
   description:
     "The Audit & Evidence Package workflow. From request to delivery in a sealed, watermark-stamped, examiner-grade file.",
-};
+  path: "/audit",
+});
 
 const steps = [
   {

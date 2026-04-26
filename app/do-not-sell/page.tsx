@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { PageTitle } from "@/components/ui/page-title";
+import { pageMetadata } from "@/lib/seo-metadata";
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: "Do Not Sell · Brown & Sullivan",
   description:
     "Opt-out of the sale or sharing of personal information under applicable state privacy laws. Process and contact of record for Brown & Sullivan.",
-};
+  path: "/do-not-sell",
+});
 
 export default function DoNotSellPage() {
   return (

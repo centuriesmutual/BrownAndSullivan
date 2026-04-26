@@ -1,11 +1,13 @@
 import { PageTitle } from "@/components/ui/page-title";
 import { Jurisdictions } from "@/components/sections/jurisdictions";
+import { pageMetadata } from "@/lib/seo-metadata";
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: "About · Brown & Sullivan",
   description:
     "Established MMXXV in the State of Texas. A compliance counsel and directory of record for regulated distribution.",
-};
+  path: "/about",
+});
 
 const principles = [
   {

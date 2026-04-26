@@ -4,16 +4,18 @@ import {
   FilingExhibitRequestBlurb,
 } from "@/components/filing-exhibits/filing-exhibit-list";
 import { directoryEntries } from "@/content/directory";
+import { pageMetadata } from "@/lib/seo-metadata";
 
 const complianceArtifacts = directoryEntries.filter(
   (e) => e.category === "Compliance Artifacts"
 );
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: "Compliance Artifacts · Brown & Sullivan",
   description:
     "Sealed compliance artifacts—call records, verifications, SOA, TPMO disclosures, and consent evidence—with regulatory references and attestation request path.",
-};
+  path: "/compliance-artifacts",
+});
 
 export default function ComplianceArtifactsPage() {
   return (

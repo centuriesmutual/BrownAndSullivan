@@ -1,11 +1,13 @@
 import { PageTitle } from "@/components/ui/page-title";
 import { integrations } from "@/content/integrations";
+import { pageMetadata } from "@/lib/seo-metadata";
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: "Integrations · Brown & Sullivan",
   description:
     "RingCentral, Box.com, HealthSherpa, AHIP, CMS MARx, and State NIPR — the counterparties of the Brown & Sullivan operating system.",
-};
+  path: "/integrations",
+});
 
 export default function IntegrationsPage() {
   return (

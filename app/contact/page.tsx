@@ -1,11 +1,13 @@
 import { PageTitle } from "@/components/ui/page-title";
 import { Button } from "@/components/ui/button";
+import { pageMetadata } from "@/lib/seo-metadata";
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: "Contact · Brown & Sullivan",
   description:
     "Counsel-style intake. Engagements are accepted under privilege and against a written engagement letter.",
-};
+  path: "/contact",
+});
 
 export default function ContactPage() {
   return (

@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { PageTitle } from "@/components/ui/page-title";
+import { pageMetadata } from "@/lib/seo-metadata";
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: "Rewards · Brown & Sullivan",
   description:
     "Recognition and reward posture for distribution partners: documented criteria tied to compliance performance and written carrier programs.",
-};
+  path: "/rewards",
+});
 
 export default function RewardsPage() {
   return (

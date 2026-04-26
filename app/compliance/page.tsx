@@ -1,6 +1,7 @@
 import { PageTitle } from "@/components/ui/page-title";
 import { BlockTile } from "@/components/ui/block-tile";
 import { compliancePrograms } from "@/content/compliance-programs";
+import { pageMetadata } from "@/lib/seo-metadata";
 
 const programs = compliancePrograms;
 
@@ -11,11 +12,12 @@ const programStandPageHref: Record<string, string> = {
   tsr: "/ftc-tsr",
 };
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: "Compliance · Brown & Sullivan",
   description:
     "TCPA, CMS, HIPAA, FTC TSR, State DOI, and SOC 2 — the regulatory perimeter under which the firm operates.",
-};
+  path: "/compliance",
+});
 
 export default function CompliancePage() {
   return (

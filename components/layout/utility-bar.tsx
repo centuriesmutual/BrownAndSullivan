@@ -23,7 +23,10 @@ export function UtilityBar() {
         </ul>
         <ul className="flex flex-wrap items-center gap-x-6 gap-y-1 ledger-sm">
           <li>
-            <Link href="/contactus" className="firm-link">
+            <Link
+              href="/contactus"
+              className="firm-link -m-1 inline-flex min-h-[2.75rem] min-w-[2.75rem] items-center justify-end px-1 py-2 sm:min-h-0 sm:min-w-0 sm:px-0 sm:py-0"
+            >
               Contact us
             </Link>
           </li>

@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { PageTitle } from "@/components/ui/page-title";
+import { pageMetadata } from "@/lib/seo-metadata";
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: "Dental Vision Hearing · Brown & Sullivan",
   description:
     "Dental, vision, and hearing lines in the firm’s directory posture: appointment, script, and compliance evidence where these ancillary health products are in scope for represented clients.",
-};
+  path: "/dental-vision-hearing",
+});
 
 export default function DentalVisionHearingPage() {
   return (

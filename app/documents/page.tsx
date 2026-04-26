@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { PageTitle } from "@/components/ui/page-title";
+import { pageMetadata } from "@/lib/seo-metadata";
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: "Documents · Brown & Sullivan",
   description:
     "Index path to scripts, compliance artifacts, directory entries, and filing-class documents maintained by the firm.",
-};
+  path: "/documents",
+});
 
 export default function DocumentsPage() {
   return (

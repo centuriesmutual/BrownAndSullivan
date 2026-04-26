@@ -30,7 +30,7 @@ export function PageTitle({
           ))}
         </div>
         <div className="col-span-12 lg:col-span-9">
-          <h1 className="display-headline font-display tracking-tight">
+          <h1 className="display-headline break-words font-display tracking-tight">
             {title}
           </h1>
           {subtitle ? (

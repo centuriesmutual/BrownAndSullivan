@@ -1,10 +1,12 @@
 import { PageTitle } from "@/components/ui/page-title";
+import { pageMetadata } from "@/lib/seo-metadata";
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: "Search · Brown & Sullivan",
   description:
     "Search the firm’s compliance directory by title, code, tag, or citation.",
-};
+  path: "/search",
+});
 
 export default function SearchPage() {
   return (

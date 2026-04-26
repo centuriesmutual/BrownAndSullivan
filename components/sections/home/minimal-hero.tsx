@@ -7,7 +7,7 @@ export function MinimalHero() {
       <div className="container-grid">
         <div className="grid gap-12 lg:grid-cols-[1.02fr_0.98fr] lg:items-center">
           <div className="max-w-3xl">
-            <h1 className="display-letterhead max-w-4xl">
+            <h1 className="display-letterhead max-w-4xl break-words">
               Counsel for regulated health insurance distribution.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-ink-wash">

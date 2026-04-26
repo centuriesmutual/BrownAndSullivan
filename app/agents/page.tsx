@@ -8,6 +8,7 @@ import { directoryEntries } from "@/content/directory";
 import { agents, carrierLines } from "@/content/agents";
 import { states, licensedCount } from "@/lib/states";
 import { cn } from "@/lib/utils";
+import { pageMetadata } from "@/lib/seo-metadata";
 
 const agentRegistryExhibits = directoryEntries.filter(
   (e) => e.category === "Agent Registry"
@@ -19,11 +20,12 @@ const totalAppointments = agents.reduce(
 );
 const active = agents.filter((a) => a.status === "ACTIVE").length;
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: "Agent Registry · Brown & Sullivan",
   description:
     "Registry objects for producer licensure, AHIP, and carrier appointments, plus the live NPN ledger reconciled to NIPR.",
-};
+  path: "/agents",
+});
 
 export default function AgentsPage() {
   return (

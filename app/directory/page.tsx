@@ -4,12 +4,14 @@ import {
   directoryEntries,
   type DirectoryCategory,
 } from "@/content/directory";
+import { pageMetadata } from "@/lib/seo-metadata";
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: "Directory · Brown & Sullivan",
   description:
     "The compliance directory of artifacts, agents, carriers, regulatory frameworks, operations, retention, authorization, and audit evidence.",
-};
+  path: "/directory",
+});
 
 const order: DirectoryCategory[] = [
   "Compliance Artifacts",

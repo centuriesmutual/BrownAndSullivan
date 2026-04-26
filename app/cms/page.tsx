@@ -1,12 +1,14 @@
 import { notFound } from "next/navigation";
 import { ComplianceProgramDetail } from "@/components/compliance/compliance-program-detail";
 import { getComplianceProgram } from "@/content/compliance-programs";
+import { pageMetadata } from "@/lib/seo-metadata";
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: "CMS · Brown & Sullivan",
   description:
     "CMS Medicare Communications & Marketing Guidelines: TPMO, SOA, recording, and file-and-use at Brown & Sullivan.",
-};
+  path: "/cms",
+});
 
 export default function CmsPage() {
   const program = getComplianceProgram("cms");

@@ -1,15 +1,17 @@
 import { Mail, Phone } from "lucide-react";
 import { PageTitle } from "@/components/ui/page-title";
+import { pageMetadata } from "@/lib/seo-metadata";
 
 const EMAIL = "counsel@brownandsullivan.example";
 const PHONE_DISPLAY = "+1 (806) 555-0140";
 const PHONE_TEL = "+18065550140";
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: "Contact Us · Brown & Sullivan",
   description:
     "Telephone and email of record for Brown & Sullivan. No web form; reach the firm directly.",
-};
+  path: "/contactus",
+});
 
 export default function ContactUsPage() {
   return (

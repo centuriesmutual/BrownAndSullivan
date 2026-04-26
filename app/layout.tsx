@@ -1,4 +1,6 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
+import { SiteJsonLd } from "@/components/seo/site-json-ld";
+import { getSiteUrl } from "@/lib/site";
 import {
   Cormorant_Garamond,
   Archivo_Black,
@@ -45,7 +47,8 @@ export const metadata: Metadata = {
   title: "Brown & Sullivan — Medicare & ACA Compliance Infrastructure",
   description:
     "A controlled operating interface for Medicare, ACA, and TCPA-governed distribution.",
-  metadataBase: new URL("https://brownandsullivan.example"),
+  metadataBase: new URL(getSiteUrl()),
+  alternates: { canonical: "/" },
   openGraph: {
     title: "Brown & Sullivan",
     description:
@@ -53,6 +56,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: "Brown & Sullivan",
+    url: "/",
   },
   twitter: {
     card: "summary_large_image",
@@ -61,6 +65,15 @@ export const metadata: Metadata = {
       "Compliance infrastructure for regulated health insurance distribution.",
   },
   robots: { index: true, follow: true },
+  other: { "msapplication-TileColor": "#ffffff" },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+  themeColor: "#ffffff",
+  colorScheme: "light",
 };
 
 export default function RootLayout({
@@ -73,10 +86,11 @@ export default function RootLayout({
       lang="en"
       className={`${display.variable} ${block.variable} ${body.variable} ${mono.variable}`}
     >
-      <body className="font-body bg-paper text-ink antialiased">
+      <body className="font-body min-w-0 [touch-action:manipulation] bg-paper text-ink antialiased pb-[env(safe-area-inset-bottom,0px)]">
+        <SiteJsonLd />
         <UtilityBar />
         <Header />
-        <main className="animate-paper-fade">{children}</main>
+        <main className="min-w-0 animate-paper-fade">{children}</main>
         <Footer />
         <SearchShortcut />
         <Analytics />

@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { PageTitle } from "@/components/ui/page-title";
+import { pageMetadata } from "@/lib/seo-metadata";
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: "New Enrollment · Brown & Sullivan",
   description:
     "How new health insurance enrollments are opened under the firm’s compliance perimeter—Medicare, ACA, and controlled distribution.",
-};
+  path: "/new-enrollment",
+});
 
 export default function NewEnrollmentPage() {
   return (

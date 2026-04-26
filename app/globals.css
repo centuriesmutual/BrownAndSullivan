@@ -12,6 +12,12 @@
   --rule: #e5e5e5;
 }
 
+html {
+  overflow-x: clip;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
 html,
 body {
   background-color: var(--paper);
@@ -277,8 +283,9 @@ body {
     margin-right: auto;
     width: 100%;
     max-width: 72rem;
-    padding-left: clamp(1.5rem, 4vw, 2rem);
-    padding-right: clamp(1.5rem, 4vw, 2rem);
+    /* Respect notch / home indicator without double-counting body safe padding on narrow viewports */
+    padding-left: max(clamp(1.5rem, 4vw, 2rem), env(safe-area-inset-left, 0px));
+    padding-right: max(clamp(1.5rem, 4vw, 2rem), env(safe-area-inset-right, 0px));
   }
 
   .soft-container {
@@ -328,7 +335,8 @@ body {
     outline: 0;
     width: 100%;
     padding: 0.875rem 0;
-    font-size: 0.8125rem;
+    /* 16px minimum prevents iOS Safari zoom-on-focus on input */
+    font-size: max(1rem, 16px);
     letter-spacing: 0.18em;
     text-transform: uppercase;
     color: var(--ink);

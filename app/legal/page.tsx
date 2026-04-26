@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { PageTitle } from "@/components/ui/page-title";
+import { pageMetadata } from "@/lib/seo-metadata";
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: "Legal · Brown & Sullivan",
   description:
     "Legal notices, privilege, and general terms of use for brownandsullivan.example and communications with the firm.",
-};
+  path: "/legal",
+});
 
 export default function LegalPage() {
   return (

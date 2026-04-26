@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { PageTitle } from "@/components/ui/page-title";
+import { pageMetadata } from "@/lib/seo-metadata";
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: "Careers · Brown & Sullivan",
   description:
     "Careers, co-counsel, and limited roster: how the firm adds producers and professional staff.",
-};
+  path: "/careers",
+});
 
 export default function CareersPage() {
   return (

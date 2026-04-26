@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { PageTitle } from "@/components/ui/page-title";
+import { pageMetadata } from "@/lib/seo-metadata";
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: "Claims · Brown & Sullivan",
   description:
     "How Brown & Sullivan treats claim-related questions in the regulated health insurance file — intake, notice, and counsel routing.",
-};
+  path: "/claims",
+});
 
 export default function ClaimsPage() {
   return (
