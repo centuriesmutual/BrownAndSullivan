@@ -4,12 +4,12 @@ import Link from "next/link";
 import { siteConfig } from "@/lib/nav";
 
 const directory = [
-  { label: "Compliance Artifacts", href: "/compliance-artifacts" },
+  { label: "About Us", href: "/about" },
   { label: "Agent Registry", href: "/agents" },
   { label: "Carrier Catalog", href: "/directory#carrier-catalog" },
-  { label: "Policy Directives", href: "/policy-directives" },
   { label: "Script Library", href: "/scripts" },
   { label: "Audit Packages", href: "/audit" },
+  { label: "Compliance Artifacts", href: "/compliance-artifacts" },
 ];
 
 const compliance = [
@@ -41,7 +41,7 @@ const products = [
 const jurisdictions = [
   { label: "Texas (HQ)", href: "/about#jurisdictions" },
   { label: "Licensed States Index", href: "/agents#licensure" },
-  { label: "Multi-State Filings", href: "/about#jurisdictions" },
+  { label: "Policy Directives", href: "/policy-directives" },
   { label: "Carrier Appointments", href: "/agents#appointments" },
 ];
 
