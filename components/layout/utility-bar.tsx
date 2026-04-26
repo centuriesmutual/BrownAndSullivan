@@ -27,7 +27,7 @@ export function UtilityBar() {
               href="/contactus"
               className="firm-link -m-1 inline-flex min-h-[2.75rem] min-w-[2.75rem] items-center justify-end px-1 py-2 sm:min-h-0 sm:min-w-0 sm:px-0 sm:py-0"
             >
-              Help Desk
+              Contact Us
             </Link>
           </li>
         </ul>
