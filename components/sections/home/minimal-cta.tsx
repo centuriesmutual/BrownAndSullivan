@@ -1,6 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import { FormEvent, useState } from "react";
+
+const FIRM_PLAQUE_PHOTO =
+  "https://images.unsplash.com/photo-1507842217123-9e2f37608a8e?auto=format&fit=crop&w=1200&q=85";
 
 const inquiryTypes = [
   "Consumer Medicare / ACA matter",
@@ -75,55 +79,59 @@ export function MinimalCta() {
             </div>
 
             <aside className="border-t border-gray bg-paper-cream/70 p-8 md:p-10 lg:border-l lg:border-t-0 lg:p-12">
-              <div className="relative overflow-hidden rounded-[1.35rem] border border-gray bg-white p-6 shadow-[0_20px_60px_rgba(10,10,10,0.06)]">
+              <div className="relative border-4 border-double border-ink/85 bg-gradient-to-b from-white via-paper to-paper-cream p-1 shadow-[0_1px_0_0_#d8d4cc,0_24px_60px_rgba(10,10,10,0.08),inset_0_0_0_1px_rgba(10,10,10,0.05)]">
                 <div
                   aria-hidden="true"
-                  className="absolute right-5 top-5 h-24 w-24 rounded-[1.5rem] border border-gray bg-paper-cream/70"
+                  className="pointer-events-none absolute left-2 top-2 h-1.5 w-1.5 rounded-full border border-ink/50 bg-ink/10"
                 />
                 <div
                   aria-hidden="true"
-                  className="relative mb-7 flex h-48 items-end justify-center overflow-hidden rounded-[1.25rem] bg-paper-cream"
-                >
-                  <div className="absolute left-7 top-7 h-20 w-24 rounded-2xl border border-gray bg-white shadow-[0_12px_30px_rgba(10,10,10,0.05)]" />
-                  <div className="absolute right-7 top-10 h-24 w-28 rounded-2xl border border-gray bg-white shadow-[0_12px_30px_rgba(10,10,10,0.05)]" />
-                  <div className="relative z-10 h-32 w-32 rounded-t-full bg-ink" />
-                  <div className="relative z-10 -ml-10 h-20 w-48 rounded-t-[4rem] bg-white" />
-                  <div className="absolute bottom-0 left-0 right-0 h-12 bg-ink" />
-                </div>
+                  className="pointer-events-none absolute right-2 top-2 h-1.5 w-1.5 rounded-full border border-ink/50 bg-ink/10"
+                />
+                <div
+                  aria-hidden="true"
+                  className="pointer-events-none absolute bottom-2 left-2 h-1.5 w-1.5 rounded-full border border-ink/50 bg-ink/10"
+                />
+                <div
+                  aria-hidden="true"
+                  className="pointer-events-none absolute bottom-2 right-2 h-1.5 w-1.5 rounded-full border border-ink/50 bg-ink/10"
+                />
 
-                <div className="relative">
-                  <p className="ledger-sm mb-4">About the Firm</p>
-                  <h3 className="text-3xl leading-tight">
+                <div className="border border-ink/15 bg-white/50 px-5 pb-6 pt-5 md:px-7 md:pb-8 md:pt-6">
+                  <p className="text-center font-mono text-[10px] uppercase tracking-[0.28em] text-ink/45">
+                    About us
+                  </p>
+                  <div className="mx-auto mt-3 h-px max-w-[9rem] bg-ink/20" />
+                  <p className="mt-3 text-center font-display text-2xl tracking-tight text-ink sm:text-3xl">
+                    Brown &amp; Sullivan
+                  </p>
+
+                  <div className="relative mt-6 overflow-hidden border-2 border-ink/12 bg-ink/5">
+                    <div className="relative aspect-[4/3] w-full">
+                      <Image
+                        src={FIRM_PLAQUE_PHOTO}
+                        alt="Professional library reading room with book-lined walls and study tables"
+                        fill
+                        sizes="(min-width: 1024px) 400px, 100vw"
+                        className="object-cover grayscale contrast-[0.95]"
+                      />
+                    </div>
+                    <p className="border-t border-ink/10 bg-paper-cream/90 px-3 py-2 text-center font-mono text-[9px] uppercase tracking-[0.12em] text-ink/40">
+                      A setting for research and review
+                    </p>
+                  </div>
+
+                  <h3 className="mt-6 font-display text-xl font-medium leading-snug text-ink sm:text-2xl">
                     A restrained compliance practice built for regulated
                     distribution.
                   </h3>
-                  <p className="mt-4 text-sm leading-7 text-ink-wash">
+                  <p className="mt-3 text-sm leading-7 text-ink-wash">
                     Brown &amp; Sullivan combines licensed insurance operations,
                     legal disclosure discipline, and audit-file retention into a
                     single professional practice. The firm is intentionally
                     small, controlled, and built for matters that require a
                     reviewable record.
                   </p>
-
-                  <div className="mt-6 grid grid-cols-3 gap-3">
-                    {[
-                      ["03", "active markets"],
-                      ["10y", "Medicare record"],
-                      ["01", "controlled desk"],
-                    ].map(([value, label]) => (
-                      <div
-                        key={label}
-                        className="rounded-2xl border border-gray bg-paper px-3 py-4 text-center"
-                      >
-                        <p className="text-xl font-semibold tracking-[-0.05em]">
-                          {value}
-                        </p>
-                        <p className="mt-1 text-[11px] leading-4 text-ink-wash">
-                          {label}
-                        </p>
-                      </div>
-                    ))}
-                  </div>
                 </div>
               </div>
             </aside>
