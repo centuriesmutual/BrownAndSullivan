@@ -49,7 +49,7 @@ const firm = [
   { label: "About", href: "/about" },
   { label: "Agents", href: "/agents" },
   { label: "Contact", href: "/contactus" },
-  { label: "Integrations", href: "/integrations" },
+  { label: "New Enrollment", href: "/new-enrollment" },
 ];
 
 interface FooterColumnProps {
