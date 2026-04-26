@@ -1,0 +1,25 @@
+<svg width="960" height="1120" viewBox="0 0 960 1120" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Professional counsel in a restrained office setting</title>
+  <desc id="desc">A monochrome editorial image of counsel seated beside case files in a quiet professional office.</desc>
+  <rect width="960" height="1120" rx="56" fill="#F6F3EE"/>
+  <rect x="64" y="64" width="832" height="992" rx="40" fill="#FFFFFF" stroke="#E5E5E5" stroke-width="2"/>
+  <rect x="112" y="136" width="736" height="428" rx="28" fill="#F6F3EE"/>
+  <path d="M112 564H848V868C848 886.778 832.778 902 814 902H146C127.222 902 112 886.778 112 868V564Z" fill="#0A0A0A"/>
+  <rect x="176" y="196" width="244" height="312" rx="122" fill="#0A0A0A"/>
+  <circle cx="298" cy="304" r="78" fill="#F6F3EE"/>
+  <path d="M198 508C217.5 426.5 253 386 298 386C343 386 378.5 426.5 398 508H198Z" fill="#F6F3EE"/>
+  <path d="M236 454L298 520L360 454V508H236V454Z" fill="#FFFFFF"/>
+  <rect x="482" y="206" width="280" height="34" rx="17" fill="#0A0A0A"/>
+  <rect x="482" y="266" width="228" height="16" rx="8" fill="#2C2C2C" fill-opacity="0.36"/>
+  <rect x="482" y="302" width="260" height="16" rx="8" fill="#2C2C2C" fill-opacity="0.28"/>
+  <rect x="482" y="338" width="196" height="16" rx="8" fill="#2C2C2C" fill-opacity="0.24"/>
+  <rect x="482" y="418" width="88" height="88" rx="22" fill="#FFFFFF" stroke="#E5E5E5" stroke-width="2"/>
+  <rect x="594" y="418" width="88" height="88" rx="22" fill="#FFFFFF" stroke="#E5E5E5" stroke-width="2"/>
+  <rect x="706" y="418" width="88" height="88" rx="22" fill="#FFFFFF" stroke="#E5E5E5" stroke-width="2"/>
+  <path d="M196 654H602" stroke="#F6F3EE" stroke-width="18" stroke-linecap="round"/>
+  <path d="M196 716H764" stroke="#F6F3EE" stroke-width="18" stroke-linecap="round" stroke-opacity="0.7"/>
+  <path d="M196 778H710" stroke="#F6F3EE" stroke-width="18" stroke-linecap="round" stroke-opacity="0.5"/>
+  <rect x="176" y="948" width="188" height="28" rx="14" fill="#0A0A0A"/>
+  <rect x="388" y="948" width="128" height="28" rx="14" fill="#2C2C2C" fill-opacity="0.24"/>
+  <rect x="540" y="948" width="244" height="28" rx="14" fill="#2C2C2C" fill-opacity="0.18"/>
+</svg>

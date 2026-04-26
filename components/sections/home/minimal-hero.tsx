@@ -1,32 +1,36 @@
+import Image from "next/image";
 import { LinkButton } from "@/components/ui/button";
-
-const statusItems = [
-  ["Status", "Authorized"],
-  ["Recording", "Active"],
-  ["Compliance", "Verified"],
-  ["Agent", "Licensed"],
-];
 
 export function MinimalHero() {
   return (
-    <section className="section-y">
+    <section className="section-y bg-white">
       <div className="container-grid">
-        <div className="grid gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+        <div className="grid gap-12 lg:grid-cols-[1.02fr_0.98fr] lg:items-center">
           <div className="max-w-3xl">
-            <div className="soft-pill mb-8 inline-flex px-3 py-1.5 text-xs font-medium text-ink-wash">
-              Medicare · ACA · TCPA · CMS
+            <div className="soft-pill mb-8 inline-flex px-3 py-1.5 text-xs font-medium uppercase tracking-[0.12em] text-ink-wash">
+              Medicare · ACA · Regulatory Counsel
             </div>
             <h1 className="display-letterhead max-w-4xl">
-              Compliance infrastructure for Medicare &amp; ACA distribution
+              Counsel for regulated health insurance distribution.
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-ink-wash">
-              Brown &amp; Sullivan maintains a controlled operating environment
-              for licensed agents, recorded engagements, required disclosures,
-              and retained audit evidence.
+              Brown &amp; Sullivan advises and operates at the intersection of
+              licensed enrollment, required consumer disclosures, recorded
+              engagements, and retained audit evidence.
             </p>
+            <div className="mt-8 grid max-w-xl gap-3 border-l border-gray pl-5 text-sm leading-6 text-ink-wash">
+              <p>
+                Medicare and ACA matters are handled through controlled intake,
+                documented notice, and review by licensed personnel.
+              </p>
+              <p>
+                The firm is presently active in Texas, Arizona, and North
+                Carolina.
+              </p>
+            </div>
             <div className="mt-9 flex flex-wrap gap-3">
               <LinkButton href="/directory" size="lg">
-                Enter Directory
+                View Directory
               </LinkButton>
               <LinkButton href="#disclosures" variant="ghost" size="lg">
                 View Disclosures
@@ -34,40 +38,25 @@ export function MinimalHero() {
             </div>
           </div>
 
-          <aside className="soft-container p-4 lg:p-5" aria-label="System status preview">
-            <div className="rounded-2xl border border-gray bg-paper-cream/70 p-5">
-              <div className="mb-6 flex items-center justify-between">
-                <div>
-                  <p className="text-sm font-medium text-ink">Engagement Control</p>
-                  <p className="mt-1 text-xs text-ink-wash">Matter · 2026-04-25 · TX</p>
-                </div>
-                <span className="rounded-full bg-ink px-3 py-1 text-xs font-medium text-white">
-                  Live
-                </span>
-              </div>
-
-              <div className="grid gap-3">
-                {statusItems.map(([label, value]) => (
-                  <div
-                    key={label}
-                    className="flex items-center justify-between rounded-xl border border-gray bg-white px-4 py-3"
-                  >
-                    <span className="text-sm text-ink-wash">{label}</span>
-                    <span className="text-sm font-medium text-ink">{value}</span>
-                  </div>
-                ))}
-              </div>
-
-              <div className="mt-5 rounded-xl border border-gray bg-white p-4">
-                <div className="mb-3 flex items-center justify-between text-xs text-ink-wash">
-                  <span>Audit retention</span>
-                  <span>10 years</span>
-                </div>
-                <div className="h-2 rounded-full bg-gray">
-                  <div className="h-2 w-4/5 rounded-full bg-ink" />
-                </div>
-              </div>
-            </div>
+          <aside aria-label="Professional counsel portrait" className="relative">
+            <div className="absolute -right-6 -top-6 hidden h-40 w-40 rounded-[2rem] bg-paper-cream lg:block" />
+            <div className="absolute -bottom-6 -left-6 hidden h-48 w-48 rounded-[2rem] border border-gray bg-white lg:block" />
+            <figure className="soft-container relative overflow-hidden p-3">
+              <Image
+                src="/counsel-hero.svg"
+                alt="Professional counsel in a restrained office setting"
+                width={960}
+                height={1120}
+                className="aspect-[6/7] w-full rounded-[1.25rem] object-cover"
+                priority
+              />
+              <figcaption className="absolute bottom-7 left-7 right-7 rounded-2xl border border-white/20 bg-white/88 p-4 shadow-[0_18px_50px_rgba(10,10,10,0.12)] backdrop-blur-md">
+                <p className="text-sm font-medium text-ink">Brown &amp; Sullivan</p>
+                <p className="mt-1 text-xs leading-5 text-ink-wash">
+                  Regulated distribution counsel · Texas principal office
+                </p>
+              </figcaption>
+            </figure>
           </aside>
         </div>
       </div>

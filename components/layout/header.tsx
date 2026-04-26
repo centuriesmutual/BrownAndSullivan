@@ -3,7 +3,7 @@ import { primaryNav, siteConfig } from "@/lib/nav";
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-40 border-b border-gray bg-white/86 backdrop-blur-xl">
+    <header className="border-b border-gray bg-white/86 backdrop-blur-xl">
       <div className="container-grid flex flex-col gap-4 py-4 lg:flex-row lg:items-center lg:justify-between">
         <Link
           href="/"
