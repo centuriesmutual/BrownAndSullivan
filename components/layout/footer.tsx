@@ -6,7 +6,7 @@ import { siteConfig } from "@/lib/nav";
 const directory = [
   { label: "About Us", href: "/about" },
   { label: "Agent Registry", href: "/agents" },
-  { label: "Carrier Catalog", href: "/directory#carrier-catalog" },
+  { label: "New Enrollment", href: "/new-enrollment" },
   { label: "Script Library", href: "/scripts" },
   { label: "Audit Packages", href: "/audit" },
   { label: "Compliance Artifacts", href: "/compliance-artifacts" },
@@ -49,7 +49,7 @@ const firm = [
   { label: "About", href: "/about" },
   { label: "Agents", href: "/agents" },
   { label: "Contact", href: "/contactus" },
-  { label: "New Enrollment", href: "/new-enrollment" },
+  { label: "Legal", href: "/legal" },
 ];
 
 interface FooterColumnProps {
