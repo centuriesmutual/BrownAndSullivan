@@ -1,5 +1,19 @@
-import Image from "next/image";
+import dynamic from "next/dynamic";
 import { LinkButton } from "@/components/ui/button";
+
+const HeroScholBlocks3D = dynamic(
+  () =>
+    import("./hero-schol-blocks-3d").then((m) => m.HeroScholBlocks3D),
+  {
+    ssr: false,
+    loading: () => (
+      <div
+        className="flex aspect-[6/7] w-full min-h-[380px] items-center justify-center rounded-[1.25rem] bg-paper-cream"
+        aria-hidden
+      />
+    ),
+  }
+);
 
 export function MinimalHero() {
   return (
@@ -38,24 +52,19 @@ export function MinimalHero() {
             </div>
           </div>
 
-          <aside aria-label="Professional counsel portrait" className="relative">
+          <aside
+            aria-label="Scholastic letter blocks, three-dimensional still render"
+            className="relative"
+          >
             <div className="absolute -right-6 -top-6 hidden h-40 w-40 rounded-[2rem] bg-paper-cream lg:block" />
             <div className="absolute -bottom-6 -left-6 hidden h-48 w-48 rounded-[2rem] border border-gray bg-white lg:block" />
             <figure className="soft-container relative overflow-hidden p-3">
-              <Image
-                src="/counsel-hero.svg"
-                alt="Professional counsel in a restrained office setting"
-                width={960}
-                height={1120}
-                className="aspect-[6/7] w-full rounded-[1.25rem] object-cover"
-                priority
-              />
-              <figcaption className="absolute bottom-7 left-7 right-7 rounded-2xl border border-white/20 bg-white/88 p-4 shadow-[0_18px_50px_rgba(10,10,10,0.12)] backdrop-blur-md">
-                <p className="text-sm font-medium text-ink">Brown &amp; Sullivan</p>
-                <p className="mt-1 text-xs leading-5 text-ink-wash">
-                  Regulated distribution counsel · Texas principal office
-                </p>
-              </figcaption>
+              <span className="sr-only">
+                A static three-dimensional render of scholastic wooden letter
+                blocks, including B, ampersand, S, and secondary A and C blocks,
+                in firm monochrome.
+              </span>
+              <HeroScholBlocks3D />
             </figure>
           </aside>
         </div>
