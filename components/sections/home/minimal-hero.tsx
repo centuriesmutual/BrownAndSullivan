@@ -15,16 +15,11 @@ export function MinimalHero() {
               licensed enrollment, required consumer disclosures, recorded
               engagements, and retained audit evidence.
             </p>
-            <div className="mt-8 grid max-w-xl gap-2.5 border-l border-gray pl-5 text-sm leading-6 text-ink-wash">
+            <div className="mt-8 max-w-xl border-l border-gray pl-5 text-sm leading-6 text-ink-wash">
               <p>
                 Medicare: controlled intake; marketing under MCMG and
                 carrier-filed materials; sales and counseling by licensed,
                 appointed personnel.
-              </p>
-              <p>
-                ACA Marketplace: same standard where the firm represents a
-                client. Licensed and appointed in Texas, Arizona, and North
-                Carolina only until further filings.
               </p>
             </div>
             <div className="mt-9 flex flex-wrap gap-3">
