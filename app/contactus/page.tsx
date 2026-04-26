@@ -16,7 +16,7 @@ const hours = [
 ] as const;
 
 export const metadata = pageMetadata({
-  title: "Contact Us · Brown & Sullivan",
+  title: "Help Desk · Brown & Sullivan",
   description:
     "Telephone and email of record for Brown & Sullivan. No web form; reach the firm directly.",
   path: "/contactus",
@@ -28,7 +28,7 @@ export default function ContactUsPage() {
       <PageTitle
         volume={3}
         chapter={3}
-        eyebrow="CONTACT · US"
+        eyebrow="HELP · DESK"
         title="Reach the firm directly."
         subtitle="Use the email or telephone of record below. This page does not host a web form. For a structured first note, you may also use the engagement desk on the home page, which opens your mail client."
         meta={["NO · WEB · FORM"]}

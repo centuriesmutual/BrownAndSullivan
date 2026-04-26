@@ -118,7 +118,7 @@ export default function CareersPage() {
                   href="/contactus"
                   className="text-ink underline decoration-ink/30 underline-offset-2 hover:decoration-ink"
                 >
-                  Contact
+                  Help Desk
                 </Link>
                 .
               </p>

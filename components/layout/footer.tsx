@@ -46,9 +46,9 @@ const jurisdictions = [
 ];
 
 const firm = [
-  { label: "About", href: "/about" },
+  { label: "About Us", href: "/about" },
+  { label: "Help Desk", href: "/contactus" },
   { label: "Careers", href: "/careers" },
-  { label: "Contact", href: "/contactus" },
   { label: "Legal", href: "/legal" },
 ];
 

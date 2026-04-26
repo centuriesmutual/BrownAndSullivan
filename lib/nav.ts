@@ -11,7 +11,7 @@ export const primaryNav: NavItem[] = [
   { letter: "A", label: "Audit", serif: "Audit", href: "/audit" },
   { letter: "S", label: "Scripts", serif: "Scripts", href: "/scripts" },
   { letter: "I", label: "Integrations", serif: "Integrations", href: "/integrations" },
-  { letter: "T", label: "Contact", serif: "Contact", href: "/contactus" },
+  { letter: "H", label: "Help Desk", serif: "Help Desk", href: "/contactus" },
 ];
 
 export const siteConfig = {

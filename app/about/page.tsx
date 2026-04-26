@@ -6,7 +6,7 @@ import { FirmSiteNav } from "@/components/firm/firm-site-nav";
 import { licensedCount } from "@/lib/states";
 
 export const metadata = pageMetadata({
-  title: "About · Brown & Sullivan",
+  title: "About Us · Brown & Sullivan",
   description:
     "Established MMXXV in the State of Texas. A compliance counsel and directory of record for regulated distribution.",
   path: "/about",
@@ -186,7 +186,7 @@ export default function AboutPage() {
                   href="/contactus"
                   className="text-paper-cream underline decoration-paper-cream/30 underline-offset-4 hover:decoration-paper-cream"
                 >
-                  CONTACT · US
+                  HELP · DESK
                 </Link>
               </p>
             </div>

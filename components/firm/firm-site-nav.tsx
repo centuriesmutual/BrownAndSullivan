@@ -2,9 +2,9 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 
 const ITEMS = [
-  { id: "about" as const, href: "/about", label: "About" },
+  { id: "about" as const, href: "/about", label: "About Us" },
+  { id: "contact" as const, href: "/contactus", label: "Help Desk" },
   { id: "careers" as const, href: "/careers", label: "Careers" },
-  { id: "contact" as const, href: "/contactus", label: "Contact" },
   { id: "legal" as const, href: "/legal", label: "Legal" },
 ];
 

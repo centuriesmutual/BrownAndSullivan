@@ -41,11 +41,11 @@ export default function LegalPage() {
             This chapter is a single file. Use the table of contents to move
             through notices, then terms, then privacy. Related firm pages:{" "}
             <Link href="/about" className="text-ink underline decoration-ink/30 underline-offset-2">
-              About
+              About Us
             </Link>
             ,{" "}
             <Link href="/contactus" className="text-ink underline decoration-ink/30 underline-offset-2">
-              Contact
+              Help Desk
             </Link>
             .
           </p>
