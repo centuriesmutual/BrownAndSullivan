@@ -7,7 +7,7 @@ export interface AlphabetEntry {
 export const alphabet: AlphabetEntry[] = [
   { letter: "A", label: "Agent Registry · AHIP", href: "/agents" },
   { letter: "B", label: "Box.com Sync", href: "/integrations#box" },
-  { letter: "C", label: "Compliance Engine · CMS", href: "/compliance#engine" },
+  { letter: "C", label: "Rewards · CMS", href: "/rewards" },
   { letter: "D", label: "DNC · Directory · DOI", href: "/compliance#doi" },
   { letter: "E", label: "Evidence Package", href: "/audit#evidence" },
   { letter: "F", label: "FTC TSR · Formularies", href: "/ftc-tsr" },
