@@ -37,7 +37,7 @@ export function ScriptsPreview() {
               </p>
               <div className="mt-auto pt-4 border-t border-current ledger-sm flex items-center justify-between">
                 <span>{s.domain.toUpperCase()}</span>
-                <span className="underline underline-offset-4 decoration-1">
+                <span className="font-medium tracking-wide opacity-80 group-hover:opacity-100">
                   VIEW · SCRIPT →
                 </span>
               </div>

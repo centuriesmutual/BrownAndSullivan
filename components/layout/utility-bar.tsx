@@ -22,15 +22,8 @@ export function UtilityBar() {
           </li>
         </ul>
         <ul className="flex flex-wrap items-center gap-x-6 gap-y-1 ledger-sm">
-          <li className="hidden sm:block">
-            <kbd className="rounded-md border border-gray bg-white px-1.5 py-0.5">⌘ K</kbd>
-            <span className="ml-2 opacity-70">SEARCH</span>
-          </li>
           <li>
-            <Link
-              href="/contact"
-              className="firm-link"
-            >
+            <Link href="/contact" className="firm-link">
               Request appointment
             </Link>
           </li>
