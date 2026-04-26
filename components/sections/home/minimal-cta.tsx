@@ -15,22 +15,22 @@ const deskItems = [
   {
     label: "Target response",
     value: "Within one business day",
-    hint: "Initial acknowledgment, not a merits conclusion.",
+    note: "Initial acknowledgment, not a merits conclusion.",
   },
   {
     label: "Matter review",
     value: "Conflicts & routing",
-    hint: "Screened under firm policy before any engagement letter.",
+    note: "Screened under firm policy before any engagement letter.",
   },
   {
     label: "Submissions",
     value: "After intake acceptance",
-    hint: "Documents and attachments follow a controlled channel.",
+    note: "Documents and attachments follow a controlled channel.",
   },
   {
     label: "Response hours",
     value: "Mon–Fri · 9:00–17:00 CT",
-    hint: "Time zone for the engagement desk; holidays posted separately.",
+    note: "Time zone for the engagement desk; holidays posted separately.",
   },
 ] as const;
 
@@ -62,33 +62,32 @@ export function MinimalCta() {
             <div className="p-8 md:p-10 lg:p-12">
               <p className="ledger-sm mb-4 text-ink/80">Engagement desk</p>
               <h2 className="display-section max-w-2xl text-balance">
-                Inquiries composed as matter memos, delivered through your mail
-                client.
+                Matter memos, delivered your mail client.
               </h2>
-              <p className="mt-5 max-w-xl text-pretty text-base leading-8 text-ink-wash">
-                The desk is for initial contact only: a structured note in your
-                own environment, with no private health data required at this
-                step. The firm uses it to route, conflict-check, and respond on
-                business days.
+              <p className="mt-4 max-w-lg text-sm font-semibold leading-7 text-ink sm:text-[15px] sm:leading-8">
+                Initial contact only: structured first note, no PHI. Routed,
+                conflict-checked, and answered on business days.
               </p>
 
-              <div className="mt-9 overflow-hidden rounded-3xl border border-gray/90 bg-gradient-to-b from-paper-cream/95 to-white shadow-[0_1px_0_#e4e0d8,0_20px_50px_rgba(10,10,10,0.06)] ring-1 ring-ink/[0.04]">
-                <ul className="divide-y divide-gray/80">
+              <div className="mt-8 overflow-hidden rounded-2xl border border-gray/70 bg-paper/90">
+                <ul className="divide-y divide-gray/60">
                   {deskItems.map((row) => (
                     <li
                       key={row.label}
-                      className="grid gap-1.5 px-5 py-4 sm:grid-cols-[minmax(0,11rem)_1fr] sm:items-baseline sm:gap-6 sm:px-6 sm:py-5"
+                      className="px-4 py-3.5 sm:px-5 sm:py-4"
                     >
-                      <p className="text-[11px] font-medium uppercase tracking-[0.16em] text-ink/55">
-                        {row.label}
-                      </p>
-                      <div>
-                        <p className="text-sm font-semibold text-ink">
-                          {row.value}
+                      <div className="flex flex-col gap-0.5 sm:grid sm:grid-cols-[10.5rem_1fr] sm:items-start sm:gap-6">
+                        <p className="text-[0.65rem] font-medium uppercase tracking-[0.2em] text-ink/40">
+                          {row.label}
                         </p>
-                        <p className="mt-1.5 text-xs leading-relaxed text-ink-wash">
-                          {row.hint}
-                        </p>
+                        <div>
+                          <p className="text-sm font-medium text-ink sm:text-[0.9375rem] sm:leading-snug">
+                            {row.value}
+                          </p>
+                          <p className="mt-1 text-xs leading-relaxed text-ink/50">
+                            {row.note}
+                          </p>
+                        </div>
                       </div>
                     </li>
                   ))}

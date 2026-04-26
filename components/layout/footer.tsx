@@ -93,7 +93,7 @@ export function Footer() {
             <Image
               src="/footer-mark.svg"
               alt=""
-              width={120}
+              width={98}
               height={40}
               unoptimized
               className="mt-3 h-8 w-auto opacity-90"

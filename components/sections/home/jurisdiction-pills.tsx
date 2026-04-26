@@ -37,32 +37,15 @@ export function JurisdictionPills() {
                 </div>
               </article>
 
-              <article className="rounded-2xl border border-gray bg-white p-5 shadow-[0_12px_34px_rgba(10,10,10,0.04)]">
-                <p className="text-xs font-medium uppercase tracking-[0.16em] text-ink/55">
-                  External desk · coordination
-                </p>
-                <p className="mt-3 text-sm leading-6 text-ink-wash">
-                  If you are a carrier, platform, or distribution organization, use
-                  this path to hand off QHP, Medicare, or line-of-business questions
-                  to the firm&rsquo;s compliance desk. Submissions are triaged
-                  in-house, conflict-checked, and returned in writing.
-                  Not a trading floor or consumer quote flow—an intake for
-                  professional coordination only.
-                </p>
-                <p className="mt-3 text-xs font-medium leading-5 text-ink/50">
-                  Use the control below. It opens the contact page the desk uses
-                  to log and answer these requests.
-                </p>
-                <div className="mt-5 border-t border-gray/80 pt-5">
-                  <Link
-                    href="/contact"
-                    className="flex w-full min-h-12 items-center justify-center rounded-2xl border-2 border-ink bg-ink px-4 text-center text-base font-semibold tracking-[-0.02em] text-white shadow-[0_12px_28px_rgba(10,10,10,0.16)] transition hover:-translate-y-0.5 hover:bg-ink/95 hover:shadow-[0_16px_36px_rgba(10,10,10,0.2)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2"
-                  >
-                    <span>Market</span>
-                    <span className="mx-0.5 text-white/50">·</span>
-                    <span>Exchange</span>
-                  </Link>
-                </div>
+              <article className="rounded-2xl border border-gray bg-white p-3 shadow-[0_12px_34px_rgba(10,10,10,0.04)]">
+                <Link
+                  href="/contact"
+                  className="flex w-full min-h-12 items-center justify-center rounded-xl border-2 border-ink bg-ink px-4 text-center text-base font-semibold tracking-[-0.02em] text-white shadow-[0_12px_28px_rgba(10,10,10,0.14)] transition hover:-translate-y-0.5 hover:bg-ink/95 hover:shadow-[0_16px_36px_rgba(10,10,10,0.2)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2"
+                >
+                  <span>Market</span>
+                  <span className="mx-0.5 text-white/50">·</span>
+                  <span>Exchange</span>
+                </Link>
               </article>
             </div>
           </div>

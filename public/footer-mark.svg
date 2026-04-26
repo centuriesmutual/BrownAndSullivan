@@ -1,9 +1,8 @@
-<svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<svg width="98" height="40" viewBox="0 0 98 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
   <rect x="1" y="5" width="28" height="30" rx="4" fill="#F6F3EE" stroke="#0A0A0A" stroke-width="1.5"/>
   <text x="15" y="27" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#0A0A0A">A</text>
   <rect x="34" y="5" width="28" height="30" rx="4" fill="#F6F3EE" stroke="#0A0A0A" stroke-width="1.5"/>
   <text x="48" y="27" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#0A0A0A">B</text>
   <rect x="66" y="5" width="28" height="30" rx="4" fill="#F6F3EE" stroke="#0A0A0A" stroke-width="1.5"/>
   <text x="80" y="27" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#0A0A0A">C</text>
-  <text x="110" y="24" text-anchor="end" font-family="system-ui, sans-serif" font-size="8" font-weight="500" fill="#0A0A0A" letter-spacing="0.12em">ABC</text>
 </svg>
