@@ -1,19 +1,5 @@
-import dynamic from "next/dynamic";
+import Image from "next/image";
 import { LinkButton } from "@/components/ui/button";
-
-const HeroScholBlocks3D = dynamic(
-  () =>
-    import("./hero-schol-blocks-3d").then((m) => m.HeroScholBlocks3D),
-  {
-    ssr: false,
-    loading: () => (
-      <div
-        className="flex aspect-[6/7] w-full min-h-[380px] items-center justify-center rounded-[1.25rem] bg-paper-cream"
-        aria-hidden
-      />
-    ),
-  }
-);
 
 export function MinimalHero() {
   return (
@@ -53,18 +39,29 @@ export function MinimalHero() {
           </div>
 
           <aside
-            aria-label="Scholastic letter blocks, three-dimensional still render"
+            aria-label="Professional office environment"
             className="relative"
           >
             <div className="absolute -right-6 -top-6 hidden h-40 w-40 rounded-[2rem] bg-paper-cream lg:block" />
             <div className="absolute -bottom-6 -left-6 hidden h-48 w-48 rounded-[2rem] border border-gray bg-white lg:block" />
             <figure className="soft-container relative overflow-hidden p-3">
-              <span className="sr-only">
-                A static three-dimensional render of scholastic wooden letter
-                blocks, including B, ampersand, S, and secondary A and C blocks,
-                in firm monochrome.
-              </span>
-              <HeroScholBlocks3D />
+              <div className="relative aspect-[6/7] w-full min-h-[380px] overflow-hidden rounded-[1.5rem] border border-gray/80 bg-paper-cream shadow-[0_2px_0_#e8e6e0,0_28px_80px_rgba(10,10,10,0.1)] sm:min-h-[400px]">
+                <Image
+                  src="/hero-ambient.jpg"
+                  alt="Bright modern workspace with large windows and city views, representing a controlled professional environment"
+                  fill
+                  className="object-cover object-center grayscale contrast-[0.98]"
+                  sizes="(min-width: 1024px) 45vw, 100vw"
+                  priority
+                />
+                <div
+                  className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/[0.07] via-transparent to-white/[0.12]"
+                  aria-hidden
+                />
+              </div>
+              <figcaption className="mt-2 text-center text-[11px] font-medium uppercase tracking-[0.14em] text-ink/40">
+                Representative practice setting
+              </figcaption>
             </figure>
           </aside>
         </div>

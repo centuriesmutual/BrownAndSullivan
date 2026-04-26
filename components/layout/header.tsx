@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { primaryNav, siteConfig } from "@/lib/nav";
 
@@ -7,9 +8,19 @@ export function Header() {
       <div className="container-grid flex flex-col gap-4 py-4 lg:flex-row lg:items-center lg:justify-between">
         <Link
           href="/"
-          className="font-body text-sm font-semibold uppercase tracking-[0.24em] text-ink transition-opacity hover:opacity-70"
+          className="group inline-flex items-center gap-3 text-ink transition-opacity hover:opacity-80"
         >
-          {siteConfig.name}
+          <Image
+            src="/footer-mark.svg"
+            alt=""
+            width={120}
+            height={40}
+            unoptimized
+            className="h-8 w-auto opacity-90 transition group-hover:opacity-100"
+          />
+          <span className="font-body text-sm font-semibold uppercase tracking-[0.24em]">
+            {siteConfig.name}
+          </span>
         </Link>
 
         <div className="flex flex-col gap-4 lg:flex-row lg:items-center">
