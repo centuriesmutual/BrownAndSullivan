@@ -136,28 +136,29 @@ export function Footer() {
         <div className="mt-12 flex flex-col gap-3 border-t border-gray pt-6 text-xs text-ink-wash md:flex-row md:items-center md:justify-between">
           <p className="max-w-2xl leading-relaxed">
             <span className="text-ink/80">© 2026 Brown &amp; Sullivan.</span>{" "}
-            Use of this site is subject to the{" "}
+            Access to and use of this website are governed by the{" "}
             <Link
               href="/legal#terms-of-service"
               className="text-ink underline decoration-ink/30 underline-offset-2 transition-colors hover:text-ink"
             >
-              terms of service
+              Terms of Service
             </Link>{" "}
             and{" "}
             <Link
               href="/legal#privacy-policy"
               className="text-ink underline decoration-ink/30 underline-offset-2 transition-colors hover:text-ink"
             >
-              privacy policy
+              Privacy Policy
             </Link>
-            .{" "}
+            . The{" "}
             <Link
               href="/legal"
               className="text-ink underline decoration-ink/30 underline-offset-2 transition-colors hover:text-ink"
             >
-              Legal notices
+              Legal Notices
             </Link>{" "}
-            describe attorney advertising, privilege, and intake.
+            address attorney advertising, professional privilege, and matter
+            intake.
           </p>
           <div className="flex flex-wrap gap-x-4 gap-y-2 ledger-sm">
             <span>{siteConfig.build}</span>
