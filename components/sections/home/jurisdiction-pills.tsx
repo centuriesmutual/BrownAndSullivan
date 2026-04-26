@@ -37,14 +37,30 @@ export function JurisdictionPills() {
                 </div>
               </article>
 
-              <Link
-                href="/contact"
-                className="group block rounded-2xl border-2 border-ink bg-ink px-6 py-8 text-center text-white shadow-[0_12px_34px_rgba(10,10,10,0.12)] transition hover:-translate-y-0.5 hover:shadow-[0_18px_40px_rgba(10,10,10,0.18)]"
-              >
-                <span className="font-body text-2xl font-semibold tracking-[-0.02em] sm:text-3xl">
-                  Market<span className="text-white/45">·</span>Exchange
-                </span>
-              </Link>
+              <article className="rounded-2xl border border-gray bg-white p-5 shadow-[0_12px_34px_rgba(10,10,10,0.04)]">
+                <h3 className="font-body text-lg font-semibold tracking-[-0.02em] text-ink sm:text-xl">
+                  Market
+                  <span className="text-ink/35">·</span>
+                  Exchange
+                </h3>
+                <p className="mt-3 text-sm leading-6 text-ink-wash">
+                  Carrier inquiries, QHP and Medicare distribution questions, and
+                  structured intake for organizations seeking to coordinate with
+                  the firm&rsquo;s compliance desk. Contact routes to engagement
+                  staff for a written response; not a public trading venue.
+                </p>
+                <div className="mt-5 flex flex-wrap items-center justify-between gap-3 border-t border-gray/80 pt-5">
+                  <p className="text-xs font-medium uppercase tracking-[0.14em] text-ink/50">
+                    Outbound from this page
+                  </p>
+                  <Link
+                    href="/contact"
+                    className="inline-flex h-10 shrink-0 items-center justify-center rounded-full border border-ink bg-ink px-5 text-sm font-medium text-white transition hover:-translate-y-0.5 hover:bg-ink/95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2"
+                  >
+                    Open contact
+                  </Link>
+                </div>
+              </article>
             </div>
           </div>
 
