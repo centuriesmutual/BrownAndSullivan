@@ -100,7 +100,7 @@ export function Footer() {
               className="mt-3 h-8 w-auto opacity-90"
             />
             <p className="mt-4 text-sm leading-6 text-ink-wash">
-              Controlled compliance infrastructure for Medicare, ACA, and
+              Compliance counsel and program controls for Medicare, ACA, and
               TCPA-governed distribution.
             </p>
             <p className="mt-4 flex items-center gap-2 text-sm text-ink-wash">

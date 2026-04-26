@@ -46,13 +46,13 @@ const mono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Brown & Sullivan — Medicare & ACA Compliance Infrastructure",
   description:
-    "A controlled operating interface for Medicare, ACA, and TCPA-governed distribution.",
+    "Counsel and compliance for Medicare, ACA, and TCPA-governed health insurance distribution.",
   metadataBase: new URL(getSiteUrl()),
   alternates: { canonical: "/" },
   openGraph: {
     title: "Brown & Sullivan",
     description:
-      "Compliance infrastructure for regulated health insurance distribution.",
+      "Counsel and compliance for regulated health insurance distribution.",
     type: "website",
     locale: "en_US",
     siteName: "Brown & Sullivan",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Brown & Sullivan",
     description:
-      "Compliance infrastructure for regulated health insurance distribution.",
+      "Counsel and compliance for regulated health insurance distribution.",
   },
   robots: { index: true, follow: true },
   other: { "msapplication-TileColor": "#ffffff" },

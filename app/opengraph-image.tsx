@@ -132,7 +132,7 @@ export default function OpenGraphImage() {
               lineHeight: 1.45,
             }}
           >
-            Medicare · ACA · TCPA — compliance infrastructure for licensed
+            Medicare · ACA · TCPA — compliance and counsel for licensed
             distribution
           </div>
         </div>

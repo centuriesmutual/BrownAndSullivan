@@ -23,7 +23,7 @@ const active = agents.filter((a) => a.status === "ACTIVE").length;
 export const metadata = pageMetadata({
   title: "Agent Registry · Brown & Sullivan",
   description:
-    "Registry objects for producer licensure, AHIP, and carrier appointments, plus the live NPN ledger reconciled to NIPR.",
+    "Agent licensure, appointments, and national producer numbers maintained as directory-of-record for represented distribution programs.",
   path: "/agents",
 });
 

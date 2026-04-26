@@ -5,7 +5,7 @@ import { pageMetadata } from "@/lib/seo-metadata";
 export const metadata = pageMetadata({
   title: "Integrations · Brown & Sullivan",
   description:
-    "RingCentral, Box.com, HealthSherpa, AHIP, CMS MARx, and State NIPR — the counterparties of the Brown & Sullivan operating system.",
+    "How the firm connects authorized carriers, enrollment channels, and training standards under contract, privilege, and applicable federal and state law.",
   path: "/integrations",
 });
 
