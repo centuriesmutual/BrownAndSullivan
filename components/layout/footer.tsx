@@ -1,3 +1,4 @@
+import { MapPin } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/lib/nav";
@@ -102,8 +103,23 @@ export function Footer() {
               Controlled compliance infrastructure for Medicare, ACA, and
               TCPA-governed distribution.
             </p>
+            <p className="mt-4 flex items-center gap-2 text-sm text-ink-wash">
+              <MapPin
+                className="h-4 w-4 shrink-0 text-ink/70"
+                aria-hidden
+                strokeWidth={1.75}
+              />
+              <span>Lubbock, Texas</span>
+            </p>
             <div className="mt-6 ledger-sm">
               © 2026 · Brown &amp; Sullivan
+            </div>
+            <div
+              className="mt-6 flex aspect-[16/9] w-full max-w-sm items-center justify-center rounded-lg border border-dashed border-gray bg-paper-cream/80 text-center text-xs font-medium uppercase tracking-[0.12em] text-ink/40"
+              role="img"
+              aria-label="Image placeholder"
+            >
+              Image placeholder
             </div>
           </div>
 
