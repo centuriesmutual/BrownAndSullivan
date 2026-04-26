@@ -3,7 +3,7 @@ import { LinkButton } from "@/components/ui/button";
 
 export function MinimalHero() {
   return (
-    <section className="bg-white pb-[clamp(5rem,8vw,7rem)] pt-[clamp(4rem,6.5vw,5.75rem)]">
+    <section className="bg-white pb-[clamp(5rem,8vw,7rem)] pt-[clamp(3.25rem,5.5vw,4.75rem)]">
       <div className="container-grid">
         <div className="grid gap-12 lg:grid-cols-[1.02fr_0.98fr] lg:items-center">
           <div className="max-w-3xl">
