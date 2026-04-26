@@ -75,27 +75,55 @@ export function MinimalCta() {
             </div>
 
             <aside className="border-t border-gray bg-paper-cream/70 p-8 md:p-10 lg:border-l lg:border-t-0 lg:p-12">
-              <div className="rounded-[1.35rem] border border-gray bg-white p-6 shadow-[0_20px_60px_rgba(10,10,10,0.06)]">
-                <div className="mb-6 flex items-center justify-between">
-                  <div>
-                    <p className="text-sm font-medium text-ink">Intake queue</p>
-                    <p className="mt-1 text-xs text-ink-wash">Controlled review layer</p>
-                  </div>
-                  <span className="rounded-full bg-ink px-3 py-1 text-xs font-medium text-white">
-                    Open
-                  </span>
+              <div className="relative overflow-hidden rounded-[1.35rem] border border-gray bg-white p-6 shadow-[0_20px_60px_rgba(10,10,10,0.06)]">
+                <div
+                  aria-hidden="true"
+                  className="absolute right-5 top-5 h-24 w-24 rounded-[1.5rem] border border-gray bg-paper-cream/70"
+                />
+                <div
+                  aria-hidden="true"
+                  className="relative mb-7 flex h-48 items-end justify-center overflow-hidden rounded-[1.25rem] bg-paper-cream"
+                >
+                  <div className="absolute left-7 top-7 h-20 w-24 rounded-2xl border border-gray bg-white shadow-[0_12px_30px_rgba(10,10,10,0.05)]" />
+                  <div className="absolute right-7 top-10 h-24 w-28 rounded-2xl border border-gray bg-white shadow-[0_12px_30px_rgba(10,10,10,0.05)]" />
+                  <div className="relative z-10 h-32 w-32 rounded-t-full bg-ink" />
+                  <div className="relative z-10 -ml-10 h-20 w-48 rounded-t-[4rem] bg-white" />
+                  <div className="absolute bottom-0 left-0 right-0 h-12 bg-ink" />
                 </div>
-                <div className="space-y-3">
-                  {inquiryTypes.map((type, index) => (
-                    <div key={type} className="rounded-xl border border-gray bg-paper px-4 py-3">
-                      <div className="flex items-center justify-between gap-4">
-                        <span className="text-sm text-ink">{type}</span>
-                        <span className="font-mono text-[11px] text-ink-wash">
-                          0{index + 1}
-                        </span>
+
+                <div className="relative">
+                  <p className="ledger-sm mb-4">About the Firm</p>
+                  <h3 className="text-3xl leading-tight">
+                    A restrained compliance practice built for regulated
+                    distribution.
+                  </h3>
+                  <p className="mt-4 text-sm leading-7 text-ink-wash">
+                    Brown &amp; Sullivan combines licensed insurance operations,
+                    legal disclosure discipline, and audit-file retention into a
+                    single professional practice. The firm is intentionally
+                    small, controlled, and built for matters that require a
+                    reviewable record.
+                  </p>
+
+                  <div className="mt-6 grid grid-cols-3 gap-3">
+                    {[
+                      ["03", "active markets"],
+                      ["10y", "Medicare record"],
+                      ["01", "controlled desk"],
+                    ].map(([value, label]) => (
+                      <div
+                        key={label}
+                        className="rounded-2xl border border-gray bg-paper px-3 py-4 text-center"
+                      >
+                        <p className="text-xl font-semibold tracking-[-0.05em]">
+                          {value}
+                        </p>
+                        <p className="mt-1 text-[11px] leading-4 text-ink-wash">
+                          {label}
+                        </p>
                       </div>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
                 </div>
               </div>
             </aside>
