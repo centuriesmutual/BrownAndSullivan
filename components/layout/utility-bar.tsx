@@ -10,7 +10,7 @@ export function UtilityBar() {
           </li>
           <li className="hidden sm:flex items-center gap-2">
             <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full bg-ink/45" />
-            <span>SOC 2 Type II</span>
+            <span>Since 2025</span>
           </li>
           <li className="hidden md:flex items-center gap-2">
             <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full bg-ink/45" />
