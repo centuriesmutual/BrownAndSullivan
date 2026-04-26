@@ -6,7 +6,7 @@ export function UtilityBar() {
       <div className="container-grid flex flex-wrap items-center justify-between gap-x-6 gap-y-2 py-2.5">
         <ul className="flex flex-wrap items-center gap-x-5 gap-y-1 ledger-sm">
           <li>
-            <span className="opacity-60">Office ·</span> TX
+            <span className="opacity-60">Office ·</span> USA
           </li>
           <li className="hidden sm:flex items-center gap-2">
             <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full bg-ink/45" />
@@ -14,11 +14,11 @@ export function UtilityBar() {
           </li>
           <li className="hidden md:flex items-center gap-2">
             <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full bg-ink/45" />
-            <span>HIPAA Covered Entity</span>
+            <span>HIPAA Compliant</span>
           </li>
           <li className="hidden lg:flex items-center gap-2">
             <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full bg-ink/45" />
-            <span>CMS TPMO Disclosed</span>
+            <span>CMS Approved</span>
           </li>
         </ul>
         <ul className="flex flex-wrap items-center gap-x-6 gap-y-1 ledger-sm">
