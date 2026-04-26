@@ -150,15 +150,7 @@ export function Footer() {
             >
               Privacy Policy
             </Link>
-            . The{" "}
-            <Link
-              href="/legal"
-              className="text-ink underline decoration-ink/30 underline-offset-2 transition-colors hover:text-ink"
-            >
-              Legal Notices
-            </Link>{" "}
-            address attorney advertising, professional privilege, and matter
-            intake.
+            .
           </p>
           <div className="flex flex-wrap gap-x-4 gap-y-2 ledger-sm">
             <span>{siteConfig.build}</span>
