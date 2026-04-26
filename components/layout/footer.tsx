@@ -13,10 +13,10 @@ const directory = [
 ];
 
 const compliance = [
-  { label: "TCPA", href: "/compliance#tcpa" },
-  { label: "CMS Marketing Rules", href: "/compliance#cms" },
-  { label: "HIPAA", href: "/compliance#hipaa" },
-  { label: "FTC TSR", href: "/compliance#tsr" },
+  { label: "TCPA", href: "/tcpa" },
+  { label: "CMS", href: "/cms" },
+  { label: "HIPAA", href: "/hipaa" },
+  { label: "FTC TSR", href: "/ftc-tsr" },
   { label: "State DOI", href: "/compliance#doi" },
   { label: "SOC 2", href: "/compliance#soc2" },
 ];
