@@ -6,7 +6,7 @@ import { siteConfig } from "@/lib/nav";
 const directory = [
   { label: "Search", href: "/search" },
   { label: "Agent Registry", href: "/agents" },
-  { label: "Submit Enrollment", href: "/new-enrollment" },
+  { label: "Enrollment", href: "/new-enrollment" },
   { label: "Documents", href: "/documents" },
   { label: "Audit Packages", href: "/audit" },
   { label: "Compliance Artifacts", href: "/compliance-artifacts" },
