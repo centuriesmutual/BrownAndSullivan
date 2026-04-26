@@ -15,19 +15,16 @@ export function MinimalHero() {
               licensed enrollment, required consumer disclosures, recorded
               engagements, and retained audit evidence.
             </p>
-            <div className="mt-8 grid max-w-xl gap-3 border-l border-gray pl-5 text-sm leading-6 text-ink-wash">
+            <div className="mt-8 grid max-w-xl gap-2.5 border-l border-gray pl-5 text-sm leading-6 text-ink-wash">
               <p>
-                Medicare lines use controlled intake; notices and scripts follow
-                the Medicare Communications and Marketing Guidelines and
-                carrier-filed materials; selling and counseling are by personnel
-                licensed and appointed as CMS and each carrier require.
+                Medicare: controlled intake; marketing under MCMG and
+                carrier-filed materials; sales and counseling by licensed,
+                appointed personnel.
               </p>
               <p>
-                Federally Facilitated and state-based Marketplace (ACA) matters
-                are handled with the same intake and disclosure standard where
-                the firm represents a client. It is licensed and appointed in
-                Texas, Arizona, and North Carolina; offerings follow those
-                appointments unless and until the firm files and posts more.
+                ACA Marketplace: same standard where the firm represents a
+                client. Licensed and appointed in Texas, Arizona, and North
+                Carolina only until further filings.
               </p>
             </div>
             <div className="mt-9 flex flex-wrap gap-3">
