@@ -134,9 +134,30 @@ export function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col gap-3 border-t border-gray pt-6 text-xs text-ink-wash md:flex-row md:items-center md:justify-between">
-          <p>
-            Recordings and enrollment artifacts are maintained under CMS and TCPA
-            retention schedules.
+          <p className="max-w-2xl leading-relaxed">
+            <span className="text-ink/80">© 2026 Brown &amp; Sullivan.</span>{" "}
+            Use of this site is subject to the{" "}
+            <Link
+              href="/legal#terms-of-service"
+              className="text-ink underline decoration-ink/30 underline-offset-2 transition-colors hover:text-ink"
+            >
+              terms of service
+            </Link>{" "}
+            and{" "}
+            <Link
+              href="/legal#privacy-policy"
+              className="text-ink underline decoration-ink/30 underline-offset-2 transition-colors hover:text-ink"
+            >
+              privacy policy
+            </Link>
+            .{" "}
+            <Link
+              href="/legal"
+              className="text-ink underline decoration-ink/30 underline-offset-2 transition-colors hover:text-ink"
+            >
+              Legal notices
+            </Link>{" "}
+            describe attorney advertising, privilege, and intake.
           </p>
           <div className="flex flex-wrap gap-x-4 gap-y-2 ledger-sm">
             <span>{siteConfig.build}</span>

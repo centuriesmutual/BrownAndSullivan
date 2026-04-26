@@ -72,6 +72,51 @@ export default function LegalPage() {
           </p>
         </div>
       </section>
+
+      <section
+        id="terms-of-service"
+        className="container-grid scroll-mt-24 border-b border-ink py-12"
+      >
+        <h2 className="mb-4 font-body text-sm font-semibold uppercase tracking-[0.16em] text-ink">
+          Terms of service
+        </h2>
+        <div className="grid max-w-3xl gap-4 font-body text-sm leading-relaxed text-ink-wash">
+          <p>
+            This site is offered for information about the firm&rsquo;s
+            compliance and distribution practice. You agree not to misuse
+            contact paths, not to attempt unauthorized access to systems, and
+            to use the materials only in line with the{" "}
+            <Link
+              href="/legal"
+              className="text-ink underline decoration-ink/30 underline-offset-2 hover:decoration-ink"
+            >
+              general notices
+            </Link>{" "}
+            above. The firm may update these terms; continued use after change
+            constitutes acceptance of the revision then posted.
+          </p>
+        </div>
+      </section>
+
+      <section
+        id="privacy-policy"
+        className="container-grid scroll-mt-24 border-b border-ink py-12"
+      >
+        <h2 className="mb-4 font-body text-sm font-semibold uppercase tracking-[0.16em] text-ink">
+          Privacy policy
+        </h2>
+        <div className="grid max-w-3xl gap-4 font-body text-sm leading-relaxed text-ink-wash">
+          <p>
+            The firm does not sell personal information for value. Information
+            you submit through firm-controlled channels is used to respond, to
+            manage conflicts, and to meet legal and professional obligations.
+            Recordings and enrollment artifacts, where they exist, are
+            maintained under applicable CMS, HIPAA, and TCPA retention
+            schedules as required for represented clients&rsquo; programs—not as
+            a general consumer data practice for this site.
+          </p>
+        </div>
+      </section>
     </>
   );
 }
