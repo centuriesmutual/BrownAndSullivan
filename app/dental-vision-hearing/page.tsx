@@ -2,21 +2,21 @@ import Link from "next/link";
 import { PageTitle } from "@/components/ui/page-title";
 
 export const metadata = {
-  title: "Aesthetic Health · Brown & Sullivan",
+  title: "Dental Vision Hearing · Brown & Sullivan",
   description:
-    "Aesthetic health lines in the firm’s directory posture: appointment, script, and compliance evidence where esthetic and medical-aesthetic health products are in scope for represented clients.",
+    "Dental, vision, and hearing lines in the firm’s directory posture: appointment, script, and compliance evidence where these ancillary health products are in scope for represented clients.",
 };
 
-export default function AestheticHealthPage() {
+export default function DentalVisionHearingPage() {
   return (
     <>
       <PageTitle
         volume={2}
         chapter={5}
-        eyebrow="AESTHETIC · HEALTH"
-        title="Aesthetic health in the file when the appointment says so."
+        eyebrow="DENTAL · VISION · HEARING"
+        title="Dental, vision, and hearing in the file when the appointment says so."
         subtitle={
-          "Brown &amp; Sullivan’s public materials emphasize Medicare, ACA, and TCPA-governed health distribution. Where a client holds appointment for medical-aesthetic or esthetic health authority, the same record discipline applies: scripts, retention, and disclosure are mapped to the carrier file and the State DOI as applicable."
+          "Brown &amp; Sullivan’s public materials emphasize Medicare, ACA, and TCPA-governed health distribution. Where a client holds appointment for dental, vision, and hearing product authority, the same record discipline applies: scripts, retention, and disclosure are mapped to the carrier file and the State DOI as applicable."
         }
         meta={["APPOINTED · LINES", "DIRECTORY · INDEXED"]}
       />
@@ -26,10 +26,10 @@ export default function AestheticHealthPage() {
           <p>
             <span className="font-medium text-ink">No separate marketing
             channel.</span> The firm does not use this page to quote or
-            position aesthetic or cosmetic products. Operations follow the
-            same engagement desk and contact path as other lines; licensed
-            personnel and carrier appointment gates apply before any discussion
-            of product.
+            position stand-alone dental, vision, or hearing products. Operations
+            follow the same engagement desk and contact path as other lines;
+            licensed personnel and carrier appointment gates apply before any
+            discussion of product.
           </p>
           <p>
             <span className="font-medium text-ink">Find evidence in the

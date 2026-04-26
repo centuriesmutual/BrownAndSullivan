@@ -32,7 +32,7 @@ const operations = [
 
 const products = [
   { label: "Medicare Advantage", href: "/directory#carrier-catalog" },
-  { label: "Aesthetic Health", href: "/aesthetic-health" },
+  { label: "Dental Vision Hearing", href: "/dental-vision-hearing" },
   { label: "Medicare Supplement", href: "/directory#carrier-catalog" },
   { label: "ACA Marketplace", href: "/directory#carrier-catalog" },
   { label: "Dental & Vision", href: "/directory#carrier-catalog" },
