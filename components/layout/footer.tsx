@@ -119,7 +119,7 @@ export function Footer() {
                 src="/new3dbook.png"
                 alt="Law book with scales of justice and classical courthouse motif representing legal and tax services."
                 fill
-                className="object-contain object-center p-2 scale-[1.04] grayscale"
+                className="object-contain object-center p-2 scale-[1.04] grayscale contrast-[0.98]"
                 sizes="(max-width: 768px) 100vw, 320px"
                 priority={false}
               />

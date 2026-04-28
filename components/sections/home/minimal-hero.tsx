@@ -44,7 +44,7 @@ export function MinimalHero() {
                   src="/brownladynobg.png"
                   alt="Professional illustration of counsel in business attire"
                   fill
-                  className="object-contain object-[center_42%]"
+                  className="object-contain object-[center_42%] grayscale contrast-[0.98]"
                   sizes="(min-width: 1280px) 20rem, (min-width: 1024px) 18.5rem, (min-width: 640px) 20rem, 17.5rem"
                   priority
                 />
