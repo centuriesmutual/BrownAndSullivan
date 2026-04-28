@@ -28,6 +28,7 @@ const ROUTES: string[] = [
   "/scripts",
   "/search",
   "/tcpa",
+  "/taxes",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

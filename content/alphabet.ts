@@ -6,7 +6,7 @@ export interface AlphabetEntry {
 
 export const alphabet: AlphabetEntry[] = [
   { letter: "A", label: "Agent Registry · AHIP", href: "/agents" },
-  { letter: "B", label: "Box.com Sync", href: "/integrations#box" },
+  { letter: "B", label: "Taxes · Compliance", href: "/taxes" },
   { letter: "C", label: "Rewards · CMS", href: "/rewards" },
   { letter: "D", label: "DNC · Directory · DOI", href: "/compliance#doi" },
   { letter: "E", label: "Evidence Package", href: "/audit#evidence" },

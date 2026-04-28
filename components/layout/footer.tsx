@@ -23,9 +23,9 @@ const compliance = [
 
 const operations = [
   { label: "Do Not Sell", href: "/do-not-sell" },
-  { label: "Box Sync", href: "/integrations#box" },
   { label: "Rewards", href: "/rewards" },
   { label: "Claims", href: "/claims" },
+  { label: "Taxes", href: "/taxes" },
   { label: "Voice Verification", href: "/scripts#verification" },
   { label: "Live Transfer", href: "/directory#operations" },
 ];
@@ -114,12 +114,15 @@ export function Footer() {
             <div className="mt-6 ledger-sm">
               © 2026 · Brown &amp; Sullivan
             </div>
-            <div
-              className="mt-6 flex aspect-[16/9] w-full max-w-sm items-center justify-center rounded-lg border border-dashed border-gray bg-paper-cream/80 text-center text-xs font-medium uppercase tracking-[0.12em] text-ink/40"
-              role="img"
-              aria-label="Image placeholder"
-            >
-              Image placeholder
+            <div className="relative mt-6 aspect-[16/10] w-full max-w-sm overflow-hidden rounded-lg border border-gray bg-[#faf8f5] shadow-[0_12px_40px_rgba(10,10,10,0.06)]">
+              <Image
+                src="/lawbooknobackground.png"
+                alt="Gold scales of justice, a law book, and a wooden gavel representing legal and tax services."
+                fill
+                className="object-contain object-center p-3"
+                sizes="(max-width: 768px) 100vw, 320px"
+                priority={false}
+              />
             </div>
           </div>
 
