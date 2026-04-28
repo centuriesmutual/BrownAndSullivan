@@ -116,8 +116,8 @@ export function Footer() {
             </div>
             <div className="relative mt-6 aspect-[16/10] w-full max-w-sm overflow-hidden rounded-lg border border-gray bg-[#faf8f5] shadow-[0_12px_40px_rgba(10,10,10,0.06)]">
               <Image
-                src="/lawbooknobackground.png"
-                alt="Gold scales of justice, a law book, and a wooden gavel representing legal and tax services."
+                src="/new3dbook.png"
+                alt="Law book with scales of justice and classical courthouse motif representing legal and tax services."
                 fill
                 className="object-contain object-center p-2 scale-[1.04]"
                 sizes="(max-width: 768px) 100vw, 320px"
