@@ -119,7 +119,7 @@ export function Footer() {
                 src="/lawbooknobackground.png"
                 alt="Gold scales of justice, a law book, and a wooden gavel representing legal and tax services."
                 fill
-                className="object-contain object-center p-3"
+                className="object-cover object-[center_45%] scale-125"
                 sizes="(max-width: 768px) 100vw, 320px"
                 priority={false}
               />
