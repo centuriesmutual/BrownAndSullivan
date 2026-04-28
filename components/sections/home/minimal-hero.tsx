@@ -33,19 +33,19 @@ export function MinimalHero() {
           </div>
 
           <aside
-            aria-label="Professional office environment"
+            aria-label="Representative counsel"
             className="relative"
           >
             <div className="absolute -right-6 -top-6 hidden h-40 w-40 rounded-[2rem] bg-paper-cream lg:block" />
             <div className="absolute -bottom-6 -left-6 hidden h-48 w-48 rounded-[2rem] border border-gray bg-white lg:block" />
-            <figure className="soft-container relative mx-auto w-full max-w-[min(100%,22rem)] overflow-hidden p-3 sm:max-w-md lg:mx-0 lg:max-w-none">
-              <div className="relative aspect-[5/8] w-full overflow-hidden rounded-[1.5rem] border border-gray/80 bg-white shadow-[0_2px_0_#e8e6e0,0_28px_80px_rgba(10,10,10,0.1)]">
+            <figure className="soft-container relative mx-auto w-full max-w-[min(100%,17.5rem)] overflow-hidden p-3 sm:max-w-[min(100%,20rem)] lg:mx-0 lg:max-w-[18.5rem] xl:max-w-[20rem]">
+              <div className="relative aspect-[5/8] w-full overflow-hidden rounded-[1.5rem] border border-gray/80 bg-paper-cream shadow-[0_2px_0_#e8e6e0,0_28px_80px_rgba(10,10,10,0.1)]">
                 <Image
-                  src="/brownlady.jpg"
-                  alt="Professional illustration of counsel with law books and scales of justice"
+                  src="/brownladynobg.png"
+                  alt="Professional illustration of counsel in business attire"
                   fill
-                  className="object-contain object-[center_40%]"
-                  sizes="(min-width: 1024px) min(42vw, 24rem), (min-width: 640px) 60vw, 100vw"
+                  className="object-contain object-[center_42%]"
+                  sizes="(min-width: 1280px) 20rem, (min-width: 1024px) 18.5rem, (min-width: 640px) 20rem, 17.5rem"
                   priority
                 />
               </div>
