@@ -33,24 +33,28 @@ export function MinimalHero() {
           </div>
 
           <aside
-            aria-label="Representative counsel"
+            aria-label="Professional office environment"
             className="relative"
           >
             <div className="absolute -right-6 -top-6 hidden h-40 w-40 rounded-[2rem] bg-paper-cream lg:block" />
             <div className="absolute -bottom-6 -left-6 hidden h-48 w-48 rounded-[2rem] border border-gray bg-white lg:block" />
-            <figure className="soft-container relative mx-auto w-full max-w-[min(100%,17.5rem)] overflow-hidden p-3 sm:max-w-[min(100%,20rem)] lg:mx-0 lg:max-w-[18.5rem] xl:max-w-[20rem]">
-              <div className="relative aspect-[5/8] w-full overflow-hidden rounded-[1.5rem] border border-gray/80 bg-paper-cream shadow-[0_2px_0_#e8e6e0,0_28px_80px_rgba(10,10,10,0.1)]">
+            <figure className="soft-container relative overflow-hidden p-3">
+              <div className="relative aspect-[6/7] w-full min-h-[380px] overflow-hidden rounded-[1.5rem] border border-gray/80 bg-paper-cream shadow-[0_2px_0_#e8e6e0,0_28px_80px_rgba(10,10,10,0.1)] sm:min-h-[400px]">
                 <Image
-                  src="/brownladynobg.png"
-                  alt="Professional illustration of counsel in business attire"
+                  src="/hero-ambient.jpg"
+                  alt="Bright modern workspace with large windows and city views, representing a controlled professional environment"
                   fill
-                  className="object-contain object-[center_42%] grayscale contrast-[0.98]"
-                  sizes="(min-width: 1280px) 20rem, (min-width: 1024px) 18.5rem, (min-width: 640px) 20rem, 17.5rem"
+                  className="object-cover object-center grayscale contrast-[0.98]"
+                  sizes="(min-width: 1024px) 45vw, 100vw"
                   priority
+                />
+                <div
+                  className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/[0.07] via-transparent to-white/[0.12]"
+                  aria-hidden
                 />
               </div>
               <figcaption className="mt-2 text-center text-[11px] font-medium uppercase tracking-[0.14em] text-ink/40">
-                Representative counsel
+                Representative practice setting
               </figcaption>
             </figure>
           </aside>

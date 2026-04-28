@@ -114,15 +114,12 @@ export function Footer() {
             <div className="mt-6 ledger-sm">
               © 2026 · Brown &amp; Sullivan
             </div>
-            <div className="relative mt-6 aspect-[16/10] w-full max-w-sm overflow-hidden rounded-lg border border-gray bg-[#faf8f5] shadow-[0_12px_40px_rgba(10,10,10,0.06)]">
-              <Image
-                src="/new3dbook.png"
-                alt="Law book with scales of justice and classical courthouse motif representing legal and tax services."
-                fill
-                className="object-contain object-center p-2 scale-[1.04] grayscale contrast-[0.98]"
-                sizes="(max-width: 768px) 100vw, 320px"
-                priority={false}
-              />
+            <div
+              className="mt-6 flex aspect-[16/9] w-full max-w-sm items-center justify-center rounded-lg border border-dashed border-gray bg-paper-cream/80 text-center text-xs font-medium uppercase tracking-[0.12em] text-ink/40"
+              role="img"
+              aria-label="Image placeholder"
+            >
+              Image placeholder
             </div>
           </div>
 
